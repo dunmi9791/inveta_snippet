@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="dynamic_improved_ads" name="Ads banner">
+            <section class="banner_div">
+                        <div class="row col-md-12">
+                            <div  class="banner-container-ads" id="banner-space">
+
+                            </div>
+                            <!-- First Column: YouTube Video -->
+
+
+                        </div>
+            </section>
+        </template>
+    </data>
+</odoo>

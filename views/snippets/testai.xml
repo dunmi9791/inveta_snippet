@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data>
+    <template id="testai" name="Test AI">
+        <section class="property-agents border-none company-visible">
+
+    <div class="oe_structure inspired-section">
+        <div class="container">
+            <div class="row">
+                <!-- Heading and Tagline Column -->
+                <div class="col-md-6">
+                    <h1>Get online fast with our AI website builder</h1>
+                    <p class="tagline">Create a site that's ready to launch in just minutes.<br/>
+                    Includes 1 hour of support from our experts.<br/>
+                    PLUS your domain name is included*</p>
+                    <a href="#" class="btn btn-primary">Build Your Website</a>
+                </div>
+                <!-- Image/Banner Column -->
+                <div class="col-md-6">
+                    <img src="/inveta_snippet/static/src/img/group-v3a.webp" alt="Banner Image" class="banner-image"/>
+                </div>
+            </div>
+        </div>
+    </div>
+        </section>
+    </template>
+</data>
+</odoo>

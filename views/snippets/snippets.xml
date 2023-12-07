@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+     <template id="inveta_snippets" inherit_id="website.snippets" name="Inveta Snippets">
+        <xpath expr="//div[@id='snippet_structure']" position="before">
+            <div id="snippet_structure" class="o_panel">
+                <div class="o_panel_header">Inveta</div>
+                <div class="o_panel_body">
+                    <t t-snippet="inveta_snippet.ads_section" t-thumbnail="/inveta_snippet/static/src/img/snippets/ads.svg">
+                        <keywords>ads, section</keywords>
+                    </t>
+                    <t t-snippet="inveta_snippet.testai" t-thumbnail="/inveta_snippet/static/src/img/snippets/testsvg.svg">
+                        <keywords>ads, section</keywords>
+                    </t>
+                    <t t-snippet="inveta_snippet.improved_ads" t-thumbnail="/inveta_snippet/static/src/img/snippets/improved.svg">
+                        <keywords>ads, section</keywords>
+                    </t>
+                     <t t-snippet="inveta_snippet.dynamic_improved_ads" t-thumbnail="/inveta_snippet/static/src/img/snippets/dynamic.svg">
+                        <keywords>ads, section</keywords>
+                    </t>
+
+                </div>
+            </div>
+        </xpath>
+    </template>
+
+
+</odoo>
