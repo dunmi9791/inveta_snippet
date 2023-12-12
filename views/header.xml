@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="inveta_header" inherit_id="website.layout" name="inveta header">
+
+
+    </template>
+
+</odoo>

@@ -37,6 +37,8 @@
         'web.assets_frontend': [
             'inveta_snippet/static/src/scss/styles.scss',
             'inveta_snippet/static/src/js/ads.js',
+            'inveta_snippet/static/src/js/youtube_video_carousel.js',
+            'inveta_snippet/static/src/css/youtube_video_carousel.css',
 
         ],
         # 'web._assets_primary_variables': [

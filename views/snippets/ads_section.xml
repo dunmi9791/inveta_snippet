@@ -1,70 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <data>
-        <template id="ads_section" name="Ads Section">
-            <section class="property-agents border-none company-visible">
-                <div class="oe_structure inspired-section">
-                    <div class="container">
-                        <div class="row">
 
+        <template id="multi_video" groups="base.group_user">
+            <section>
+                <div class="row o_grid_mode" data-row-count="10">
+                    <div class="o_grid_item col-lg-6 g-col-lg-6 g-height-10 o_grid_item_image text-center"
+                         data-name="Block"
+                         style="grid-area: 1 / 1 / 11 / 7; z-index: 1;">
+                        <iframe class="w-full h-250" src="https://www.youtube.com/embed/teA26EHFuDg"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; allowfullscreen"></iframe>
+                        <h3>Invest and Trade Africa</h3>
+                        <a  href="https://www.youtube.com/@investandtradeafrica" class="bg-orange-500 text-white font-bold py-2 px-4 rounded-full hover:bg-orange-600 transition duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-opacity-50">
+                            Watch our latest episode
+                        </a>
 
-                            <!-- First Column for YouTube Video -->
-                            <div class="col-md-6 align-self-stretch video-container">
-                                <iframe width="100%" height="315" src="https://www.youtube.com/embed/cKUTHcWhHGo"
-                                        frameborder="0"
-                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                        allowfullscreen="allowfullscreen"></iframe>
+                    </div>
+                    <div class="o_grid_item col-lg-3 g-col-lg-3 g-height-5 text-center o_cc o_cc2" data-name="Block"
+                         style="grid-area: 1 / 7 / 6 / 10; z-index: 2;">
+                        <iframe class="w-full h-48" src="https://www.youtube.com/embed/rGbwGmwqKOQ"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; allowfullscreen"></iframe>
 
-                            </div>
+                    </div>
+                    <div class="o_grid_item col-lg-3 g-col-lg-3 g-height-5 text-center o_cc o_cc3" data-name="Block"
+                         style="grid-area: 1 / 10 / 6 / 13; z-index: 3;">
+                        <iframe class="w-full h-48" src="https://www.youtube.com/embed/cKUTHcWhHGo"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; allowfullscreen"></iframe>
 
+                    </div>
+                    <div class="o_grid_item col-lg-3 g-col-lg-3 g-height-5 text-center o_cc o_cc4" data-name="Block"
+                         style="grid-area: 6 / 7 / 11 / 10; z-index: 4;">
+                        <iframe class="w-full h-48" src="https://www.youtube.com/embed/fhzWcluMo24"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; allowfullscreen"></iframe>
 
-                            <!-- Second Column for Text and Button -->
-                            <div class="col-md-3">
-                                <p>Invest And Trade Africa</p>
-                                <a href="https://www.youtube.com/@investandtradeafrica" class="btn btn-primary">Watch
-                                    Our Latest
-                                    Episode
-                                </a>
-                            </div>
+                    </div>
+                    <div class="o_grid_item col-lg-3 g-col-lg-3 g-height-5 text-center o_cc o_cc2" data-name="Block"
+                         style="grid-area: 6 / 10 / 11 / 13; z-index: 5;">
+                        <iframe class="w-full h-48" src="https://www.youtube.com/embed/3p0YL9KwIQI"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; allowfullscreen"></iframe>
 
-                            <!-- Third Column for Image Banner -->
-                            <div class="col-md-3">
-                                <a href="https://your-target-url.com">
-                                    <img src="/inveta_snippet/static/src/img/adspace-01.png" alt="Banner Image"
-                                         class="image-max-height banner-image"/>
-                                </a>
-                            </div>
-                        </div>
                     </div>
                 </div>
-
-            </section>
-        </template>
-        <template id="improved_ads" name="Multiple Youtube Videos">
-            <section class="property-agents border-none company-visible">
-
-                    <div class="container inspired-section">
-                        <div class="row">
-                            <!-- First Column: YouTube Video -->
-                            <div class="microwave_video_section">
-                                <iframe class="big_video_frame" src="https://www.youtube.com/embed/cKUTHcWhHGo" frameborder="0"
-                                        allow="accelerometer; autoplay;  picture-in-picture; fullscreen;"></iframe>
-                                <div class="small_video_frames">
-                                    <iframe class="small_video_frame" src="https://www.youtube.com/embed/rGbwGmwqKOQ" frameborder="0"
-                                        allow="accelerometer; autoplay; picture-in-picture; fullscreen;"></iframe>
-                                    <iframe class="small_video_frame" src="https://www.youtube.com/embed/fhzWcluMo24" frameborder="0"
-                                        allow="accelerometer; autoplay;  picture-in-picture; fullscreen;"></iframe>
-                                    <iframe class="small_video_frame" src="https://www.youtube.com/embed/teA26EHFuDg" frameborder="0"
-                                        allow="accelerometer; autoplay;  picture-in-picture; fullscreen;"></iframe>
-                                    <iframe class="small_video_frame" src="https://www.youtube.com/embed/3p0YL9KwIQI" frameborder="0"
-                                        allow="accelerometer; autoplay;  picture-in-picture; fullscreen;"></iframe>
-                                </div>
-                               <a href="https://www.youtube.com/@investandtradeafrica" class="btn btn-primary">See More
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
             </section>
         </template>
 
