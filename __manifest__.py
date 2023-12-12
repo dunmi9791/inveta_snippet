@@ -27,6 +27,7 @@
         'security/ir.model.access.csv',
         'views/views.xml',
         'views/templates.xml',
+        'views/footer.xml',
         'views/snippets/ads_section.xml',
         'views/snippets/dynamic_ads_section.xml',
         'views/snippets/testai.xml',
