@@ -3,15 +3,14 @@
     'name': "inveta_snippet",
 
     'summary': """
-        Short (1 phrase/line) summary of the module's purpose, used as
-        subtitle on modules listing or apps.openerp.com""",
-
-    'description': """
-        Long description of module's purpose
+        Inveta Odoo web theme, meticulously crafted to elevate the user experience of your business applications. 
+        This theme seamlessly integrates with Odoo, offering a modern and intuitive design that enhances the overall
+         aesthetics of your web interface. With a focus on user-friendly navigation and responsive layouts, 
+         our theme ensures a consistent and engaging experience across devices
     """,
 
-    'author': "My Company",
-    'website': "https://www.yourcompany.com",
+    'author': "Secteur Network Solutions",
+    'website': "https://www.secteurnetworks.com",
 
     # Categories can be used to filter modules in modules listing
     # Check https://github.com/odoo/odoo/blob/16.0/odoo/addons/base/data/ir_module_category_data.xml
