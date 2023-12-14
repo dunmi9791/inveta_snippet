@@ -392,3 +392,77 @@ body {
 .focus\:ring-opacity-50:focus {
     box-shadow-opacity: 0.5;
 }
+.choose_better_way_to_work {
+    background-color: #C4BBC9; /* Tailwind's purple-800 */
+    font-family: 'Open Sans', sans-serif;
+    height: 200px; /* Limiting the height to 200px */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.choose_better_way_to_work .main-heading {
+    color: white;
+    font-size: 1.5rem; /* Tailwind's text-4xl */
+    font-weight: 600; /* Tailwind's font-semibold */
+    margin-bottom: 2rem; /* Tailwind's mb-8 */
+}
+
+.choose_better_way_to_work .button-group {
+    display: flex;
+    justify-content: center;
+    gap: 1rem; /* Tailwind's gap-4 */
+}
+
+.choose_better_way_to_work .try-slack {
+    background-color: white;
+    color: #C4BBC9; /* Tailwind's purple-800 */
+    font-weight: 600; /* Tailwind's font-semibold */
+    padding: 0.5rem 1.5rem; /* Tailwind's py-2 px-6 */
+    border-radius: 0.375rem; /* Tailwind's rounded */
+    /* Add hover and focus styles */
+}
+
+.choose_better_way_to_work .contact-sales {
+    background-color: transparent;
+    color: white;
+    font-weight: 600; /* Tailwind's font-semibold */
+    padding: 0.5rem 1.5rem; /* Tailwind's py-2 px-6 */
+    border: 1px solid white;
+    border-radius: 0.375rem; /* Tailwind's rounded */
+    /* Add hover and focus styles */
+}
+.background-image-mission {
+      /* Set the background image URL */
+      //background-image: url('path-to-your-image.jpg');
+
+      /* Set background size, repeat, and position properties as needed */
+      background-size: 100% 66.66%;
+      background-repeat: no-repeat; /* Options: 'repeat', 'repeat-x', 'repeat-y', 'no-repeat' */
+      background-position: center bottom; /* Options: top, bottom, left, right, center, etc. */
+
+      /* Define the height and width of your div */
+      width: 100%; /* Adjust as needed */
+      height: 300px; /* Adjust as needed */
+}
+.card-img-top {
+    height:100px;
+    width:100px;
+}
+.card {
+    height: 400px;
+    border-radius: 4px;
+    border: none;
+}
+.mission-pry {
+  height: 500px;
+}
+.card-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #1a202c; /* Tailwind gray-800 */
+}
+.card-text {
+    font-size: 1rem;
+    color: #4a5568; /* Tailwind gray-600 */
+}

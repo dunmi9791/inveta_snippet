@@ -12,7 +12,8 @@
                                 frameborder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; allowfullscreen"></iframe>
                         <h3>Invest and Trade Africa</h3>
-                        <a  href="https://www.youtube.com/@investandtradeafrica" class="bg-orange-500 text-white font-bold py-2 px-4 rounded-full hover:bg-orange-600 transition duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-opacity-50">
+                        <a href="https://www.youtube.com/@investandtradeafrica"
+                           class="bg-orange-500 text-white font-bold py-2 px-4 rounded-full hover:bg-orange-600 transition duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-opacity-50">
                             Watch our latest episode
                         </a>
 
@@ -46,6 +47,66 @@
 
                     </div>
                 </div>
+            </section>
+        </template>
+        <template id="discover_inveta">
+            <section>
+                <t t-name="inveta_snippet.discover_inveta">
+                    <div class="choose_better_way_to_work">
+                        <div class="flex justify-center items-center h-screen">
+                            <div class="text-center">
+                                <h1 class="main-heading">Discover Inveta</h1>
+                                <div class="button-group">
+                                    <a href="http://www.invetagroup.org/our-services" class="try-slack">Our Services</a>
+                                    <a href="http://www.invetagroup.org/about-us" class="contact-sales">About Us</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </t>
+            </section>
+        </template>
+        <template id="inveta_mission" name="inveta mission">
+            <section class="mission-pry background-image-mission" style="background-image: url('/inveta_snippet/static/src/img/bannnn-01.jpg');">
+                <div class="oe_structure"/>
+<!--                <div class="background-image-mission" style="background-image: url('/inveta_snippet/static/src/img/bannnn-01.jpg');">-->
+                    <div class="container">
+                        <div class="row">
+                            <!-- Left Column -->
+                            <div class="col-md-6">
+                                <div class="card mb-3">
+                                    <img class="card-img-top" src="/inveta_snippet/static/src/img/mission-01.png" alt="Play button icon"/>
+                                    <div class="card-body">
+                                        <h2 class="card-title">Our mission</h2>
+                                        <p class="card-text">
+                                            At INVETA Group, our mission is to empower Africa’s economic growth and
+                                            sustainable development through our specialized services. We promote a
+                                            healthy and an enabling environment for investment, trade, and the
+                                            implementation of impactful projects.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Right Column -->
+                            <div class="col-md-6">
+                                <div class="card mb-3">
+                                    <img class="card-img-top" src="/inveta_snippet/static/src/img/values-01.png" alt="Star icon"/>
+                                    <div class="card-body">
+                                        <h2 class="card-title">Collaborations and Partnerships</h2>
+                                        <p class="card-text">
+                                            At INVETA Group, we recognize the power of collaborations and stakeholder
+                                            engagement in driving transformative change. By partnering and collaborating
+                                            with both the Government and private sector, we build strong networks,
+                                            foster trust, and leverage collective expertise to achieve our shared goals.
+                                            Through these strategic collaborations, we strive to make a lasting impact
+                                            on economic development, energy access, and sustainable growth in Africa.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+<!--                </div>-->
             </section>
         </template>
 

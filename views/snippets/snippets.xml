@@ -12,6 +12,12 @@
                     <t t-snippet="inveta_snippet.multi_video" t-thumbnail="/inveta_snippet/static/src/img/snippets/youtube.svg">
                         <keywords>ads, section</keywords>
                     </t>
+                    <t t-snippet="inveta_snippet.discover_inveta" t-thumbnail="/inveta_snippet/static/src/img/snippets/discover.svg">
+                        <keywords>ads, section</keywords>
+                    </t>
+                    <t t-snippet="inveta_snippet.inveta_mission" t-thumbnail="/inveta_snippet/static/src/img/snippets/mission.svg">
+                        <keywords>ads, section</keywords>
+                    </t>
 
                 </div>
             </div>
