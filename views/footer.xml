@@ -29,23 +29,24 @@
                                         Useful links
                                     </h6>
                                     <p>
-                                        <a class="text-white">Home</a>
+                                        <a href="http://www.invetagroup.org" class="text-white">Home</a>
                                     </p>
                                     <p>
-                                        <a class="text-white">About Us</a>
+                                        <a href="http://www.invetagroup.org/about-us" class="text-white">About Us</a>
                                     </p>
                                     <p>
-                                        <a class="text-white">Services</a>
+                                        <a href="http://www.invetagroup.org/our-services" class="text-white">Services</a>
                                     </p>
                                     <p>
-                                        <a class="text-white">Invest and Trade Africa</a>
+                                        <a href="http://www.invetagroup.org/tv" class="text-white">Invest and Trade Africa</a>
                                     </p>
                                     <p>
-                                        <a class="text-white">News</a>
+                                        <a href="http://www.invetagroup.org/contactus" class="text-white">Contact Us</a>
                                     </p>
                                     <p>
-                                        <a class="text-white">Contact Us</a>
+                                        <a href="http://www.invetagroup.org/news-2" class="text-white">News</a>
                                     </p>
+
                                 </div>
 
                                 <!-- Grid column -->
@@ -58,18 +59,14 @@
                                         <i class="fas fa-home mr-3"></i>
                                        Suite 212b,Samfa  Plaza,Abuja,Nigeria
                                     </p>
+<!--                                    <p>-->
+<!--                                        <i class="fas fa-envelope mr-3"></i>-->
+<!--                                        info@invetagroup.com-->
+<!--                                    </p>-->
                                     <p>
-                                        <i class="fas fa-envelope mr-3"></i>
-                                        info@invetagroup.com
+                                        <a href="https://www.invetagroup.org/contactus" class="button-group"><button class="btn">Reach Out</button></a>
                                     </p>
-                                    <p>
-                                        <i class="fas fa-phone mr-3"></i>
-                                        + 01 234
-                                    </p>
-                                    <p>
-                                        <i class="fas fa-print mr-3"></i>
-                                        + 01 234 567 89
-                                    </p>
+
                                 </div>
                                 <!-- Grid column -->
                             </div>
