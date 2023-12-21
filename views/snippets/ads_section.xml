@@ -109,6 +109,38 @@
 <!--                </div>-->
             </section>
         </template>
+         <template id="s_our_history_content" name="Our History Content">
+        <section class="s_our_history pt32 pb32">
+
+                <div class="row">
+                    <div class="col-12 text-center mb-3">
+                        <h2>Our History</h2>
+                        <p>We've come a long way and want to share our journey with you.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card history-card">
+                            <div class="card-body">
+                                <h5 class="history-card-header">Company Founded</h5>
+                                <span class="badge">2017</span>
+                                <p class="history-card-body">The company was formerly known as Suexe Invest and has been in operation since 2017. It was restructured and is now registered as the INVETA GROUP, establishing itself as a trusted economic partner in driving growth and providing services in various sectors of the economy.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card history-card">
+                            <div class="card-body">
+                                <h5 class="history-card-header">Our Growth</h5>
+                                <span class="badge">Ongoing</span>
+                                <p class="history-card-body">Over the years, INVETA Group has earned a reputation for its commitment to delivering results and has built a strong network of strategic alliances and partnerships, allowing us to expand our reach and impact across the African continent. As we continue to grow and expand, we remain dedicated to making a positive and lasting contribution to Africa’s economic development.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+        </section>
+    </template>
 
 
     </data>

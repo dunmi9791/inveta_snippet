@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+        <record id="inveta_snippet.about_us" model="website.page">
+            <field name="name">About</field>
+            <field name="type">qweb</field>
+            <field name="url">/about</field>
+            <field name="is_published">True</field>
+            <field name="key">inveta_snippet.about_us</field>
+            <field name="arch" type="xml">
+                <t name="About" t-name="inveta_snippet.about_us">
+                    <t t-call="website.layout">
+                        <div class="oe_structure"/>
+                        <section class="s_cover parallax bg-black-50 pt96 pb96" data-scroll-background-ratio="1">
+                            <span class="s_parallax_bg oe_img_bg"
+                                  style="background-image: url('/inveta_snippet/static/src/img/bannnn-01.jpg');"/>
+                            <div class="container s_allow_columns">
+                                <h1 style="text-align: center;">
+                                    <font style="font-size: 62px; font-weight: bold;">INVETA GROUP</font>
+                                </h1>
+                            </div>
+                        </section>
+                        <section class="py-12 md:py-24 lg:py-32">
+                            <div class="container grid items-center gap-4 px-4 md:px-6">
+                                <div class="space-y-3">
+                                    <h2 class="text-3xl font-bold tracking-tighter md:text-4xl" style="color: #d85426;">
+                                        We are a renowned economic development firm in Africa
+                                    </h2>
+                                    <p class="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
+                                        Specializing in investment promotion, Project Finance and Inter- intra Africa
+                                        trade facilitation.
+                                    </p>
+                                </div>
+                                <div class="rounded-lg border bg-card text-card-foreground shadow-sm"
+                                     t-attf-data-v0-t="card">
+                                    <div class="p-6">
+                                        <p class="text-gray-500 mt-2">
+                                            We are a leading catalyst for economic development committed to providing
+                                            best-in-class services that
+                                            drive economic growth, enhance market access and finance whilst promoting
+                                            sustainable developments in
+                                            Africa. We create value by offering comprehensive solutions, leveraging our
+                                            expertise, and fostering
+                                            meaningful partnerships.
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </section>
+                        <section class="team-body">
+                            <div class="team-section">
+                                <h1 class="team-heading">Our Team</h1>
+                                <p class="team-description">
+                                    INVETA Group boasts a highly skilled and experienced team that guides the company's
+                                    strategic direction and ensures the successful execution of projects and
+                                    initiatives. Our leaders bring diverse backgrounds and expertise, enabling us to
+                                    deliver comprehensive solutions to our clients. With a deep understanding of the
+                                    African landscape and a commitment to excellence, our team fosters a culture of
+                                    innovation, collaboration, and client-centricity.
+                                </p>
+                            </div>
+                        </section>
+                        <section class="team-section py-5">
+                            <div class="container mt-5">
+                                <div class="row">
+                                    <!-- Profile Card 1 -->
+                                    <div class="col-md-6">
+                                        <div class="profile-card text-center">
+                                            <img alt=" "
+                                                 class="rounded-circle"
+                                                 src="/inveta_snippet/static/src/img/uju_paulsy_inveta.jpg"/>
+                                            <h2>UJU PAULCY</h2>
+                                            <h3>CHIEF EXECUTIVE OFFICER</h3>
+                                            <p>Uju Paulcy is a business executive deeply committed to promoting economic
+                                                development in Africa. She is the founder of the INVETA Group and also
+                                                serves as the host and executive producer of Invest and Trade Africa.
+                                                With over 10 years of experience in the industry, Uju is widely
+                                                recognized as an expert communicator in international trade, finance,
+                                                investment, energy and the oil and gas industry. She has offered
+                                                insights through Invest and Trade Africa and other notable platforms to
+                                                governments, businesses, and organizations on a wide range of issues,
+                                                including trade policy, investment promotion, and economic development
+                                                strategies.
+
+                                                Through her work as an advocate for Africa’s economic potential, she is
+                                                helping to build a brighter future for Africa and the world at large.
+                                            </p>
+
+                                        </div>
+                                    </div>
+                                    <!-- Profile Card 2 -->
+                                    <div class="col-md-6">
+                                        <div class="profile-card text-center">
+                                            <img alt=" "
+                                                 class="rounded-circle"
+                                                 src="/inveta_snippet/static/src/img/ugo.jpg"/>
+                                            <h2>UGO NWOFOR</h2>
+                                            <h3>LEGAL ADVISORY</h3>
+                                            <p>Ugo Nwofor is a legal practitioner, Notary Public and Strategy
+                                                Consultant. With more than 21 years of active and sound legal practice,
+                                                Ugo's experience is creditably pronounced. He is one of the founding
+                                                partners of Wealthy Partners, a firm of astute and profound legal
+                                                Practitioners and is currently the Managing Partner of the Firm.
+
+                                                As a seasoned professional, Ugo has provided strategic counsel and
+                                                guidance to numerous organizations across various industries. His
+                                                ability to identify opportunities, mitigate risks, and devise effective
+                                                strategies has been instrumental in driving organizational growth and
+                                                success. As a valued member of our Board, he brings invaluable insights,
+                                                and a commitment to excellence that enhances and strengthens our
+                                                corporate governance
+                                            </p>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div class="container mt-5">
+                                <div class="row">
+                                    <!-- Profile Card 1 -->
+                                    <div class="col-md-6">
+                                        <div class="profile-card text-center">
+                                            <img alt=" "
+                                                 class="rounded-circle"
+                                                 src="/inveta_snippet/static/src/img/joannah.jpg"/>
+                                            <h2>JOANNAH TITUS</h2>
+                                            <h3>INVESTMENT PROMOTION and FACILITATION OFFICER</h3>
+                                            <p>Joannah Titus is a highly skilled lawyer specializing in business
+                                                development and facilitation at INVETA Group. In her role as the
+                                                Business Development and Facilitation Officer at INVETA Group, Joannah
+                                                brings together her legal expertise and business acumen to drive
+                                                successful investment promotion and facilitation outcomes for the
+                                                company and its various partners.
+
+                                                She has extensive experience in inter and intra African trade, oil and
+                                                gas industry and the energy sector. As a seasoned lawyer, her legal
+                                                expertise includes but is not limited to; Dispute Resolution,
+                                                International Trade and Corporate/Commercial law with specifics in
+                                                contract drafting and negotiation, regulatory compliance in the oil and
+                                                gas industry, due diligence on investment projects and assessing legal
+                                                risks.
+                                            </p>
+
+                                        </div>
+                                    </div>
+                                    <!-- Profile Card 2 -->
+                                    <div class="col-md-6">
+                                        <div class="profile-card md:height-500 lg:height-500 xl:height-500 text-center">
+                                            <img alt=" "
+                                                 class="rounded-circle"
+                                                 src="/inveta_snippet/static/src/img/ifeyinwa.jpg"/>
+                                            <h2>IFEYINWA NKAMNEBE</h2>
+                                            <h3>PROGRAM EXECUTIVE</h3>
+                                            <p>Ifeyinwa is the Program Executive at INVETA Group. She is a business
+                                                administrative manager with years of experience in different sector of
+                                                the economy; oil and gas industry, insurance and the banking sector. She
+                                                is effective in initiating and implementing healthy ideas that ensure
+                                                seamless business operations and client satisfaction.
+
+                                                She has had experience in leading and managing programs focused on
+                                                promoting investment, economic growth and sustainable development in
+                                                Africa. In her career, she has executed a myriad of multifaceted
+                                                programs that has attracted international investors to the African
+                                                economy.
+                                            </p>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+
+                        </section>
+                        <section>
+                            <div class="team-section mt-5">
+                                <div class="row text-center" style="color: #d85426;">
+                                    <h2>Finance Partners</h2>
+                                    <p>
+
+                                    </p>
+                                    <div class="row">
+                                        <!-- Team Member 1 -->
+                                        <div class="col-md-4 items-center">
+                                            <div class="card-fin">
+                                                <img alt="Placeholder image of Flora Nyra" class="card-img-top"
+                                                     height="300"
+                                                     src="/inveta_snippet/static/src/img/ahmed.jpg" width="300"/>
+                                                <h5 class="card-title-fin">DR. AHMED ELGAWISH</h5>
+                                                <p>
+                                                    Managing Director
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <!-- Team Member 2 -->
+                                        <div class="col-md-4">
+                                            <div class="card-fin">
+                                                <img alt="Placeholder image of Evander Mac" class="card-img-top"
+                                                     height="300" src="/inveta_snippet/static/src/img/nevine.jpg"
+                                                     width="300"/>
+                                                <h5 class="card-title-fin">DR. NEVINE NAKHLA</h5>
+                                                <p>
+                                                    Public Affairs Director
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <!-- Team Member 3 -->
+                                        <div class="col-md-4">
+                                            <div class="card-fin">
+                                                <img alt="Placeholder image of Taytum Elia" class="card-img-top"
+                                                     height="300" src="/inveta_snippet/static/src/img/wael.jpg"
+                                                     width="300"/>
+                                                <h5 class="card-title-fin">DR. WAEL SWELAM</h5>
+                                                <p>
+                                                    VIP Technical
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!--                        <section class="bg-light py-3 py-md-5 py-xl-8">-->
+
+
+                        <div class="oe_structure"/>
+                    </t>
+                </t>
+            </field>
+        </record>
+    </data>
+</odoo>

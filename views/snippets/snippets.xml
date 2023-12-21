@@ -18,11 +18,15 @@
                     <t t-snippet="inveta_snippet.inveta_mission" t-thumbnail="/inveta_snippet/static/src/img/snippets/mission.svg">
                         <keywords>ads, section</keywords>
                     </t>
+                     <t t-snippet="inveta_snippet.s_our_history_content" t-thumbnail="/inveta_snippet/static/src/img/snippets/history.svg">
+                        <keywords>ads, section</keywords>
+                    </t>
 
                 </div>
             </div>
         </xpath>
     </template>
+
 
 
 </odoo>

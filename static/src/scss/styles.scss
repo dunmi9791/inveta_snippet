@@ -466,3 +466,297 @@ body {
     font-size: 1rem;
     color: #4a5568; /* Tailwind gray-600 */
 }
+.s_our_history {
+    background-image: url('/inveta_snippet/static/src/img/vintage.jpg'); // Replace with your actual background image path
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff; // Text color for better visibility on the background
+
+    .container {
+        // Remove the flex display or adjust it as needed
+        padding: 20px;
+    }
+
+    .history-header {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .history-card {
+        border: none;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin-bottom: 30px;
+        background-color: rgba(255, 255, 255, 0.2); /* More transparent background for card */
+
+        .history-card-header {
+            font-size: 20px;
+            font-weight: 700;
+            border-bottom: none;
+            background-color: transparent;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .history-card-body {
+            font-size: 16px;
+            line-height: 1.5;
+            color: #333;
+        }
+
+        .badge {
+            font-size: 14px;
+            font-weight: 600;
+            color: #555;
+            background-color: #eee;
+            border-radius: 15px;
+            padding: 5px 15px;
+            margin-bottom: 15px;
+            display: block;
+            width: fit-content;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
+body{margin-top:20px;}
+.py-5 {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+}
+.pt-5 {
+    padding-top: 3rem !important;
+}
+.my-5 {
+    margin-top: 3rem !important;
+    margin-bottom: 3rem !important;
+}
+.border-0 {
+    border: 0 !important;
+}
+.position-relative {
+    position: relative !important;
+}
+.shadow-lg {
+    box-shadow: 0 1rem 3rem rgb(0, 0, 0 / 18%) !important;
+}
+.card {
+    position: relative;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,0.125);
+    border-radius: .25rem;
+}
+
+.member-profile {
+    top: -50px;
+    left: 0;
+}
+.text-center {
+    text-align: center !important;
+}
+.w-100 {
+    width: 100% !important;
+}
+.position-absolute {
+    position: absolute !important;
+}
+
+.member-profile img {
+    width: 100px;
+    height: 100px;
+}
+.rounded-circle {
+    border-radius: 50% !important;
+}
+.mx-auto {
+    margin-right: auto !important;
+    margin-left: auto !important;
+}
+.shadow-sm {
+    box-shadow: 0 0.125rem 0.25rem rgb(0, 0, 0 / 8%) !important;
+}
+.profile-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    text-align: center;
+    height: 500px;  /* Default height for larger screens */
+
+    /* Media query for screens with a maximum width of 767 pixels (typical mobile screens) */
+    @media (max-width: 767px) {
+      height: auto;
+    }
+
+    img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+    }
+
+    h2 {
+        font-size: 24px;
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+
+    h3 {
+        font-size: 18px;
+        color: #555;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .social-icons {
+        font-size: 18px;
+        margin-top: 20px;
+
+        a {
+            color: #555;
+            margin-right: 10px;
+        }
+    }
+}
+body {
+            font-family: 'Open Sans', sans-serif;
+        }
+        .profile-container {
+            max-width: 600px;
+            margin: 30px auto;
+        }
+        .profile-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .profile-header img {
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+        .profile-header .name {
+            font-size: 24px;
+            font-weight: 600;
+        }
+        .profile-header .follow {
+            margin-left: auto;
+            font-size: 16px;
+        }
+        .profile-header .follow i {
+            margin-right: 10px;
+        }
+        .profile-info {
+            margin-bottom: 20px;
+        }
+        .profile-info label {
+            font-weight: 600;
+        }
+        .profile-info p {
+            margin-bottom: 5px;
+        }
+        .biography {
+            margin-bottom: 20px;
+        }
+        .biography blockquote {
+            border-left: 3px solid #000;
+            margin: 0;
+            padding-left: 20px;
+            font-style: italic;
+        }
+        .skills {
+            margin-bottom: 20px;
+        }
+        .skills .progress {
+            height: 20px;
+            background-color: #f1f1f1;
+            border-radius: 10px;
+        }
+        .skills .progress-bar {
+            font-size: 12px;
+            line-height: 20px;
+            border-radius: 10px;
+        }
+        .skills label {
+            font-weight: 600;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+.team-body {
+    background: linear-gradient(to right, #f8b195, #f67280);
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.team-section {
+    padding: 40px 0;
+}
+.team-heading {
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.team-description {
+    font-size: 18px;
+    margin: 0 15%;
+    text-align: center;
+}
+.world-map {
+    background: url('/your_module/static/src/img/world_map_placeholder.png') no-repeat center center;
+    background-size: cover;
+    height: 280px;
+    position: relative;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+}
+.team-section-fin {
+    background-color: #f8f9fa;
+    padding: 50px 0;
+    h2 {
+        font-size: 48px;
+        font-weight: 600;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    p {
+        text-align: center;
+        font-size: 20px;
+        margin-bottom: 50px;
+    }
+    .card-fin {
+        border: none;
+        margin-bottom: 30px;
+        img {
+            border-radius: 10px;
+        }
+        .card-title-fin {
+            font-size: 22px;
+            font-weight: 600;
+            margin-top: 15px;
+            text-align: center;
+        }
+    }
+}
+.container-fin {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+}
