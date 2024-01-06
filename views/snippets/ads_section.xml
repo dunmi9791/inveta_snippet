@@ -67,50 +67,53 @@
             </section>
         </template>
         <template id="inveta_mission" name="inveta mission">
-            <section class="mission-pry background-image-mission" style="background-image: url('/inveta_snippet/static/src/img/bannnn-01.jpg');">
+            <section class="mission-pry background-image-mission"
+                     style="background-image: url('/inveta_snippet/static/src/img/bannnn-01.jpg');">
                 <div class="oe_structure"/>
-<!--                <div class="background-image-mission" style="background-image: url('/inveta_snippet/static/src/img/bannnn-01.jpg');">-->
-                    <div class="container">
-                        <div class="row">
-                            <!-- Left Column -->
-                            <div class="col-md-6">
-                                <div class="card mb-3">
-                                    <img class="card-img-top" src="/inveta_snippet/static/src/img/mission-01.png" alt="Play button icon"/>
-                                    <div class="card-body">
-                                        <h2 class="card-title">Our mission</h2>
-                                        <p class="card-text">
-                                            At INVETA Group, our mission is to empower Africa’s economic growth and
-                                            sustainable development through our specialized services. We promote a
-                                            healthy and an enabling environment for investment, trade, and the
-                                            implementation of impactful projects.
-                                        </p>
-                                    </div>
+                <!--                <div class="background-image-mission" style="background-image: url('/inveta_snippet/static/src/img/bannnn-01.jpg');">-->
+                <div class="container">
+                    <div class="row">
+                        <!-- Left Column -->
+                        <div class="col-md-6">
+                            <div class="card mb-3">
+                                <img class="card-img-top" src="/inveta_snippet/static/src/img/mission-01.png"
+                                     alt="Play button icon"/>
+                                <div class="card-body">
+                                    <h2 class="card-title">Our mission</h2>
+                                    <p class="card-text">
+                                        At INVETA Group, our mission is to empower Africa’s economic growth and
+                                        sustainable development through our specialized services. We promote a
+                                        healthy and an enabling environment for investment, trade, and the
+                                        implementation of impactful projects.
+                                    </p>
                                 </div>
                             </div>
-                            <!-- Right Column -->
-                            <div class="col-md-6">
-                                <div class="card mb-3">
-                                    <img class="card-img-top" src="/inveta_snippet/static/src/img/values-01.png" alt="Star icon"/>
-                                    <div class="card-body">
-                                        <h2 class="card-title">Collaborations and Partnerships</h2>
-                                        <p class="card-text">
-                                            At INVETA Group, we recognize the power of collaborations and stakeholder
-                                            engagement in driving transformative change. By partnering and collaborating
-                                            with both the Government and private sector, we build strong networks,
-                                            foster trust, and leverage collective expertise to achieve our shared goals.
-                                            Through these strategic collaborations, we strive to make a lasting impact
-                                            on economic development, energy access, and sustainable growth in Africa.
-                                        </p>
-                                    </div>
+                        </div>
+                        <!-- Right Column -->
+                        <div class="col-md-6">
+                            <div class="card mb-3">
+                                <img class="card-img-top" src="/inveta_snippet/static/src/img/values-01.png"
+                                     alt="Star icon"/>
+                                <div class="card-body">
+                                    <h2 class="card-title">Collaborations and Partnerships</h2>
+                                    <p class="card-text">
+                                        At INVETA Group, we recognize the power of collaborations and stakeholder
+                                        engagement in driving transformative change. By partnering and collaborating
+                                        with both the Government and private sector, we build strong networks,
+                                        foster trust, and leverage collective expertise to achieve our shared goals.
+                                        Through these strategic collaborations, we strive to make a lasting impact
+                                        on economic development, energy access, and sustainable growth in Africa.
+                                    </p>
                                 </div>
                             </div>
                         </div>
                     </div>
-<!--                </div>-->
+                </div>
+                <!--                </div>-->
             </section>
         </template>
-         <template id="s_our_history_content" name="Our History Content">
-        <section class="s_our_history pt32 pb32">
+        <template id="s_our_history_content" name="Our History Content">
+            <section class="s_our_history pt32 pb32">
 
                 <div class="row">
                     <div class="col-12 text-center mb-3">
@@ -124,7 +127,11 @@
                             <div class="card-body">
                                 <h5 class="history-card-header">Company Founded</h5>
                                 <span class="badge">2017</span>
-                                <p class="history-card-body">The company was formerly known as Suexe Invest and has been in operation since 2017. It was restructured and is now registered as the INVETA GROUP, establishing itself as a trusted economic partner in driving growth and providing services in various sectors of the economy.</p>
+                                <p class="history-card-body">The company was formerly known as Suexe Invest and has been
+                                    in operation since 2017. It was restructured and is now registered as the INVETA
+                                    GROUP, establishing itself as a trusted economic partner in driving growth and
+                                    providing services in various sectors of the economy.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -133,14 +140,19 @@
                             <div class="card-body">
                                 <h5 class="history-card-header">Our Growth</h5>
                                 <span class="badge">Ongoing</span>
-                                <p class="history-card-body">Over the years, INVETA Group has earned a reputation for its commitment to delivering results and has built a strong network of strategic alliances and partnerships, allowing us to expand our reach and impact across the African continent. As we continue to grow and expand, we remain dedicated to making a positive and lasting contribution to Africa’s economic development.</p>
+                                <p class="history-card-body">Over the years, INVETA Group has earned a reputation for
+                                    its commitment to delivering results and has built a strong network of strategic
+                                    alliances and partnerships, allowing us to expand our reach and impact across the
+                                    African continent. As we continue to grow and expand, we remain dedicated to making
+                                    a positive and lasting contribution to Africa’s economic development.
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
 
-        </section>
-    </template>
+            </section>
+        </template>
 
 
     </data>

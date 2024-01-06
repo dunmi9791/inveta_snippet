@@ -760,3 +760,111 @@ body {
     justify-content: space-between;
     padding: 20px;
 }
+body {
+  background-color: #f8f9fa;
+}
+.navbar-tv {
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0,0,0,.1);
+}
+.card-tv {
+  border: none;
+  background-color: #e9ecef;
+}
+.card-tv img {
+  height: 300px;
+  width: 100%;
+  background-color: #e9ecef;
+  color: #6c757d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
+}
+.card-body-tv {
+  padding: 1.25rem;
+}
+.card-title-tv {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: #dd6b20;
+}
+.card-text-tv {
+  font-size: 0.75rem;
+  color: #6c757d;
+  max-height: 100px; /* Set a max height for the text */
+  overflow: hidden; /* Hide any overflowing content */
+}
+.btn-link-tv {
+  font-weight: bold;
+  color: #007bff;
+  text-decoration: none;
+}
+.btn-link-tv:hover {
+  text-decoration: underline;
+}
+.footer-tv {
+  font-size: 0.875rem;
+  text-align: center;
+  padding: 1rem;
+  color: #6c757d;
+  background-color: #ffffff;
+  border-top: 1px solid #dee2e6;
+}
+.watch-now-btn {
+            background-color: #f90;
+            border: none;
+            border-radius: 4px;
+            color: #fff;
+            padding: 10px 20px;
+            font-size: 14px;
+            text-transform: uppercase;
+            text-decoration: none;
+            display: inline-block;
+            align-self: start; /* Aligns horizontally */
+        }
+.episode-container {
+            padding: 20px;
+            background-color: #fff5e1;
+            border-radius: 4px;
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between; /* Aligns vertically */
+            height: 200px; /* Set a fixed height */
+            overflow: hidden; /* Hide any overflowing content */
+}
+.episode-container2 {
+            padding: 20px;
+            background-color: #f5f5dc;
+            border-radius: 4px;
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between; /* Aligns vertically */
+            height: 200px; /* Set a fixed height */
+            overflow: hidden; /* Hide any overflowing content */
+}
+
+.episode-title {
+    font-size: 14px;
+    font-weight: bold;
+    color: #dd6b20;
+}
+.episode-description {
+    font-size: 14px;
+    margin: 10px 0;
+}
+.header-episode {
+            font-size: 24px;
+            font-weight: bold;
+            color: #dd6b20;
+            padding: 20px 0;
+            text-align: center;
+        }
+.video-thumbnail {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }

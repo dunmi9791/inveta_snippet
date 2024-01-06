@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+        <record id="inveta_snippet.tv" model="website.page">
+            <field name="name">TV</field>
+            <field name="type">qweb</field>
+            <field name="url">/tv</field>
+            <field name="is_published">True</field>
+            <field name="key">inveta_snippet.tv</field>
+            <field name="arch" type="xml">
+                <t name="TV" t-name="inveta_snippet.tv">
+                    <t t-call="website.layout">
+                        <div class="oe_structure"/>
+                        <section>
+                            <div class="header-episode">Our Latest Episode</div>
+                            <div class="container mt-5">
+                                <!--                                <h2 class="mb-4">Latest Episode</h2>-->
+                                <div class="row">
+                                    <div class="col-md-8 mb-4">
+                                        <div class="card-tv">
+                                            <iframe class="w-full h-250" src="https://www.youtube.com/embed/cKUTHcWhHGo"
+                                                    frameborder="0"
+                                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; allowfullscreen"></iframe>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-4">
+                                        <div class="card-body-tv episode-container">
+                                            <h5 class="card-title-tv">Angola ; The Emerging Energy Hub in Africa</h5>
+                                            <p class="card-text-tv">An Insight Into the African Energy Investment
+                                                Landscape Starting With Angola
+
+                                            </p>
+                                            <a class="watch-now-btn" href="https://www.youtube.com/watch?v=cKUTHcWhHGo&amp;t=556s">Watch now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section>
+                            <div class="header-episode">Previous Episodes</div>
+
+                            <!--                        <h3 class="mb-4">Previous Episodes</h3>-->
+                            <div class="row">
+                                <div class="col-md-4 mb-4">
+                                    <div class="card-tv">
+                                        <iframe class="w-full h-250 video-thumbnail" src="https://www.youtube.com/embed/3p0YL9KwIQI"
+                                                frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; allowfullscreen"></iframe>
+                                        <div class="card-body-tv episode-container">
+                                            <h5 class="card-title-tv">ALL YOU NEED TO KNOW ABOUT CLIMATE CHANGE</h5>
+                                            <p class="card-text-tv">As the world takes on moving from one energy system,
+                                                it
+                                                is important that we acknowledge what the significant change is for
+                                                Africa.
+
+                                            </p>
+                                            <a class="watch-now-btn" href="https://www.youtube.com/watch?v=3p0YL9KwIQI">Watch now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-4">
+                                    <div class="card-tv">
+                                        <iframe class="w-full h-250 video-thumbnail" src="https://www.youtube.com/embed/qUH3W4OVZEM"
+                                                frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; allowfullscreen"></iframe>
+                                        <div class="card-body-tv episode-container2">
+                                            <h5 class="card-title-tv">HISTORY OF ENERGY TRANSITION</h5>
+                                            <p class="card-text-tv">
+                                            </p>
+                                            <a class="watch-now-btn" href="https://www.youtube.com/watch?v=qUH3W4OVZEM">Watch now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-4">
+                                    <div class="card-tv">
+                                        <iframe class="w-full h-250 video-thumbnail" src="https://www.youtube.com/embed/teA26EHFuDg"
+                                                frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; allowfullscreen"></iframe>
+                                        <div class="card-body-tv episode-container">
+                                            <h5 class="card-title-tv">ALCIF PANEL SESSION</h5>
+                                            <p class="card-text-tv">Opportunities and strategies in creating an enabling
+                                                hydrocarbon development financing framework for exploration and reserve
+                                                expansion in Africa.
+
+                                            </p>
+                                            <a class="watch-now-btn" href="https://www.youtube.com/watch?v=teA26EHFuDg">Watch now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section>
+
+                            <div class="row">
+                                <div class="col-md-4 mb-4">
+                                    <div class="card-tv">
+                                        <iframe class="w-full h-250 video-thumbnail" src="https://www.youtube.com/embed/rGbwGmwqKOQ"
+                                                frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; allowfullscreen"></iframe>
+                                        <div class="card-body-tv episode-container2">
+                                            <h5 class="card-title-tv">FINANCE AND AFRICA'S HYDROCARBON INDUSTRY</h5>
+                                            <p class="card-text-tv">
+
+                                            </p>
+                                            <a class="watch-now-btn" href="https://www.youtube.com/watch?v=rGbwGmwqKOQ">Watch now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-4">
+                                    <div class="card-tv">
+                                        <iframe class="w-full h-250 video-thumbnail" src="https://www.youtube.com/embed/fhzWcluMo24"
+                                                frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; allowfullscreen"></iframe>
+                                        <div class="card-body-tv episode-container">
+                                            <h5 class="card-title-tv">Africa’s position in the energy transition</h5>
+                                            <p class="card-text-tv">Watch Africa's response on the demand of energy
+                                                transition.
+
+                                            </p>
+                                            <a class="watch-now-btn" href="https://www.youtube.com/watch?v=fhzWcluMo24">Watch now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-4">
+                                    <div class="card-tv">
+                                        <iframe class="w-full h-250 video-thumbnail" src="https://www.youtube.com/embed/eZsN4QEkauA"
+                                                frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; allowfullscreen"></iframe>
+                                        <div class="card-body-tv episode-container2">
+                                            <h5 class="card-title-tv">The Invest And Trade Africa Show (Promotional
+                                                Video)
+                                            </h5>
+                                            <p class="card-text-tv">Visit https://investandtradeafrica.com/
+
+
+                                            </p>
+                                            <a class="watch-now-btn" href="https://www.youtube.com/watch?v=eZsN4QEkauA">Watch now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                    </t>
+                </t>
+            </field>
+        </record>
+    </data>
+</odoo>

@@ -28,6 +28,7 @@
         'views/templates.xml',
         'views/footer.xml',
         'views/about_us.xml',
+        'views/tv.xml',
         'views/snippets/ads_section.xml',
         'views/snippets/dynamic_ads_section.xml',
         'views/snippets/testai.xml',
