@@ -4,7 +4,7 @@
         <record id="inveta_snippet.tv" model="website.page">
             <field name="name">TV</field>
             <field name="type">qweb</field>
-            <field name="url">/tv</field>
+            <field name="url">/invetatv</field>
             <field name="is_published">True</field>
             <field name="key">inveta_snippet.tv</field>
             <field name="arch" type="xml">
