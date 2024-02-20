@@ -176,54 +176,7 @@
 
 
                         </section>
-                        <section>
-                            <div class="team-section mt-5">
-                                <div class="row text-center" style="color: #d85426;">
-                                    <h2>Finance Partners</h2>
-                                    <p>
 
-                                    </p>
-                                    <div class="row">
-                                        <!-- Team Member 1 -->
-                                        <div class="col-md-4 items-center">
-                                            <div class="card-fin">
-                                                <img alt="Placeholder image of Flora Nyra" class="card-img-top"
-                                                     height="300"
-                                                     src="/inveta_snippet/static/src/img/ahmed.jpg" width="300"/>
-                                                <h5 class="card-title-fin">DR. AHMED ELGAWISH</h5>
-                                                <p>
-                                                    Managing Director
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <!-- Team Member 2 -->
-                                        <div class="col-md-4">
-                                            <div class="card-fin">
-                                                <img alt="Placeholder image of Evander Mac" class="card-img-top"
-                                                     height="300" src="/inveta_snippet/static/src/img/nevine.jpg"
-                                                     width="300"/>
-                                                <h5 class="card-title-fin">DR. NEVINE NAKHLA</h5>
-                                                <p>
-                                                    Public Affairs Director
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <!-- Team Member 3 -->
-                                        <div class="col-md-4">
-                                            <div class="card-fin">
-                                                <img alt="Placeholder image of Taytum Elia" class="card-img-top"
-                                                     height="300" src="/inveta_snippet/static/src/img/wael.jpg"
-                                                     width="300"/>
-                                                <h5 class="card-title-fin">DR. WAEL SWELAM</h5>
-                                                <p>
-                                                    VIP Technical
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
                         <!--                        <section class="bg-light py-3 py-md-5 py-xl-8">-->
 
 
