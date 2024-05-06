@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+        <record id="inveta_snippet.services" model="website.page">
+            <field name="name">Services</field>
+            <field name="type">qweb</field>
+            <field name="url">/services</field>
+            <field name="is_published">True</field>
+            <field name="key">inveta_snippet.services</field>
+            <field name="arch" type="xml">
+                <t name="Services" t-name="inveta_snippet.services">
+                    <t t-call="website.layout">
+                        <div class="oe_structure"/>
+                        <section class="s_cover parallax bg-black-50 pt96 pb96" data-scroll-background-ratio="1">
+                            <span class="s_parallax_bg oe_img_bg"
+                                  style="background-image: url('/inveta_snippet/static/src/img/bannnn-01.jpg');"/>
+                            <div class="container s_allow_columns">
+                                <h1 style="text-align: center;">
+                                    <font style="font-size: 62px; font-weight: bold;">INVETA GROUP</font>
+                                </h1>
+                            </div>
+                        </section>
+                    </t>
+                </t>
+            </field>
+        </record>
+        </data>
+    </odoo>

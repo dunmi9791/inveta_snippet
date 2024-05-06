@@ -3,51 +3,91 @@
     <data>
 
         <template id="multi_video" groups="base.group_user">
-            <section>
-                <div class="row o_grid_mode" data-row-count="10">
-                    <div class="o_grid_item col-lg-6 g-col-lg-6 g-height-10 o_grid_item_image text-center"
-                         data-name="Block"
-                         style="grid-area: 1 / 1 / 11 / 7; z-index: 1;">
-                        <iframe class="w-full h-250" src="https://www.youtube.com/embed/cKUTHcWhHGo"
-                                frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; allowfullscreen"></iframe>
-                        <h3>Invest and Trade Africa</h3>
-                        <a href="https://www.youtube.com/@investandtradeafrica"
-                           class="bg-orange-500 text-white font-bold py-2 px-4 rounded-full hover:bg-orange-600 transition duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-opacity-50">
-                            Watch our latest episode
-                        </a>
 
+            <section >
+                <div class="row-container">
+                    <div >
+                        <div class="content-wrap">
+                            <div class="content-header">
+                                <i class="fas fa-bars">
+                                </i>
+                                <h2>
+                                    Inveta News
+                                </h2>
+                                <i class="fas fa-ellipsis-v">
+                                </i>
+                            </div>
+                            <ul class="timeline">
+                                <li class="timeline-item">
+                                    <div class="timeline-item-content">
+                                        <time>
+                                            You @10:42am
+                                        </time>
+                                        <p>
+                                            Sure, I'll see you later.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="timeline-item">
+                                    <div class="timeline-item-content">
+                                        <time>
+                                            John Doe @10:37am
+                                        </time>
+                                        <p>
+                                            Yeah, sure. Does 1:00pm work?
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="timeline-item">
+                                    <div class="timeline-item-content">
+                                        <time>
+                                            You @9:47am
+                                        </time>
+                                        <p>
+                                            Did you still want to grab lunch today?
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="o_grid_item col-lg-3 g-col-lg-3 g-height-5 text-center o_cc o_cc2" data-name="Block"
-                         style="grid-area: 1 / 7 / 6 / 10; z-index: 2;">
-                        <iframe class="w-full h-48" src="https://www.youtube.com/embed/rGbwGmwqKOQ"
-                                frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; allowfullscreen"></iframe>
+                    <div >
+                        <div class="card-media">
+                            <iframe src="https://www.youtube.com/embed/rGbwGmwqKOQ?si=cDYhkV5s_u44MtBA"></iframe>
 
-                    </div>
-                    <div class="o_grid_item col-lg-3 g-col-lg-3 g-height-5 text-center o_cc o_cc3" data-name="Block"
-                         style="grid-area: 1 / 10 / 6 / 13; z-index: 3;">
-                        <iframe class="w-full h-48" src="https://www.youtube.com/embed/teA26EHFuDg"
-                                frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; allowfullscreen"></iframe>
+                            <h3>
+                                Invest and Trade Africa
+                            </h3>
 
-                    </div>
-                    <div class="o_grid_item col-lg-3 g-col-lg-3 g-height-5 text-center o_cc o_cc4" data-name="Block"
-                         style="grid-area: 6 / 7 / 11 / 10; z-index: 4;">
-                        <iframe class="w-full h-48" src="https://www.youtube.com/embed/fhzWcluMo24"
-                                frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; allowfullscreen"></iframe>
+                            <button class="btn btn-outline-primary" type="button">
+                                Watch Our Latest Episode
+                            </button>
 
-                    </div>
-                    <div class="o_grid_item col-lg-3 g-col-lg-3 g-height-5 text-center o_cc o_cc2" data-name="Block"
-                         style="grid-area: 6 / 10 / 11 / 13; z-index: 5;">
-                        <iframe class="w-full h-48" src="https://www.youtube.com/embed/3p0YL9KwIQI"
-                                frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; allowfullscreen"></iframe>
-
+                        </div>
                     </div>
                 </div>
             </section>
+            <!--            <section>-->
+            <!--                <div class="mainHeadings__content">-->
+            <!--                    <article class="mainHeadings__text">-->
+            <!--                        <p class="mainHeadings__preTitle">nature</p>-->
+            <!--                        <h2 class="mainHeadings__title">behind the mountains</h2>-->
+            <!--                        <p class="mainHeadings__description">-->
+            <!--                            Far far away, behind the word mountains, far from the countries-->
+            <!--                            Vokalia and Consonantia, there live the blind texts.-->
+            <!--                        </p>-->
+            <!--                        <button class="cta">know more</button>-->
+            <!--                    </article>-->
+
+            <!--                    <div class="mainHeadings__image">-->
+            <!--                        <iframe width="560" height="315"-->
+            <!--                                src="https://www.youtube.com/embed/rGbwGmwqKOQ?si=cDYhkV5s_u44MtBA"-->
+            <!--                                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;-->
+            <!--                               encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>-->
+            <!--                    </div>-->
+            <!--                </div>-->
+
+            <!--            </section>-->
         </template>
         <template id="discover_inveta">
             <section>
@@ -148,6 +188,237 @@
                                 </p>
                             </div>
                         </div>
+                    </div>
+                </div>
+
+            </section>
+        </template>
+        <template id="s_our_home_content" name="Our Home Content">
+            <section class="gradient-background">
+                <div class="mainHeading__content">
+                    <article class="mainHeading__text">
+                        <p class="mainHeading__preTitle">Inveta Group</p>
+                        <h2 class="mainHeading__title">Inter and Intra African Trade Facilitation</h2>
+                        <p class="mainHeading__description">
+                            INVETA Group helps businesses to identify and assess new markets in Africa, providing
+                            insights
+                            into the region such as the regulatory environment. We promote the implementation of the
+                            African
+                            continental free trade area [AFCFTA]
+                        </p>
+                        <button class="cta">know more</button>
+                    </article>
+
+                    <figure class="mainHeading__image">
+                        <img
+                                src="/inveta_snippet/static/src/img/bannnn-01.jpg"
+                                alt=""
+                        />
+                    </figure>
+                </div>
+
+
+            </section>
+
+        </template>
+        <template id="inveta_mission_collabs" name="inveta mission collabs">
+            <section>
+                <div class="card-container">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <p class="title">Our Mission</p>
+                                <p></p>
+                            </div>
+                            <div class="flip-card-back">
+                                <p class="title"></p>
+                                <p>At INVETA Group, our mission is to empower Africa’s economic growth and sustainable
+                                    development through our specialized services. We promote a healthy and an enabling
+                                    environment for investment, trade, and the implementation of impactful projects
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <p class="title">Collaborations and Partnerships</p>
+                                <p></p>
+                            </div>
+                            <div class="flip-card-back">
+                                <p class="title"></p>
+                                <p>At INVETA Group, we recognize the power of collaborations and stakeholder engagement
+                                    in
+                                    driving transformative change. By partnering and collaborating with both the
+                                    Government
+                                    and private sector, we build strong networks, foster trust, and leverage collective
+                                    expertise to achieve our shared goals. Through these strategic collaborations, we
+                                    strive
+                                    to make a lasting impact on economic development, energy access, and sustainable
+                                    growth
+                                    in Africa
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--                </div>-->
+            </section>
+        </template>
+        <template id="our_services" name="inveta services">
+            <section>
+                <div class="cards">
+                    <div class="card">
+                        <span class="close"></span>
+                        <span class="arrow"></span>
+                        <article>
+                            <h2>Project Finance</h2>
+                            <div class="title"></div>
+                            <div class="pic">
+                                <img src="/inveta_snippet/static/src/img/project_finance.jpg"/>
+                            </div>
+
+                            <div class="desc">INVETA Group is a leading provider of capital for development projects in
+                                Africa offering grand-scale, mid-size and intermediate financing, to both government and
+                                private sectors. We are partners with major global finance institutions that supports
+                                businesses and projects across Africa. Our terms and conditions are competitive with low
+                                interest rates and fast processing times making us effective in unlocking Africa’s
+                                transformative potential through inclusive financing. We are an experienced team of
+                                experts that provides advice to investors on investment opportunities, project
+                                feasibility studies, funding strategies, and investor relations.
+                            </div>
+
+                        </article>
+                        <div class="actions">
+                            <button class="btn">
+                                <span>contact</span>
+                                <img class="icon" src="https://rafaelavlucas.github.io/assets/icons/misc/heart.svg"/>
+                            </button>
+                            <button class="btn">
+                                <span>Know More</span>
+                                <img class="icon" src="https://rafaelavlucas.github.io/assets/icons/misc/trade.svg"/>
+                            </button>
+
+                        </div>
+                    </div>
+                    <div class="card">
+                        <span class="close"></span>
+                        <span class="arrow"></span>
+                        <article>
+                            <h2>Investment Promotion Invest and Trade Africa</h2>
+                            <div class="title"></div>
+                            <div class="pic">
+                                <img src="/inveta_snippet/static/src/img/inveta.png"/>
+                                />
+                            </div>
+
+                            <div class="desc">The right communication is a fundamental aspect of economic development
+                                and an integral part of investment promotion. INVETA GROUP champions this course through
+                                the production of INVEST AND TRADE AFRICA, a premium weekly broadcast covering macro
+                                economic policies and projects impacting the African region while profiling the
+                                continent’s opportunities in energy, finance, mining and inter and intra Africa Trade.
+                                Through Invest and Trade Africa, we are making Africa's voice heard and her name known
+                                on an equitable global level by promoting and projecting projects, governments, and
+                                organizations making impactful strides on the continent.
+                            </div>
+
+                        </article>
+                        <div class="actions">
+                            <button class="btn">
+                                <span>contact</span>
+                                <img class="icon" src="https://rafaelavlucas.github.io/assets/icons/misc/heart.svg"/>
+                            </button>
+                            <button class="btn">
+                                <span>Know More</span>
+                                <img class="icon" src="https://rafaelavlucas.github.io/assets/icons/misc/trade.svg"/>
+                            </button>
+
+                        </div>
+                    </div>
+                    <div class="card">
+                        <span class="close"></span>
+                        <span class="arrow"></span>
+                        <article>
+                            <h2>Inter and Intra-African Trade Facilitation</h2>
+                            <div class="title"></div>
+                            <div class="pic">
+                                <img src="/inveta_snippet/static/src/img/inter.jpg"/>
+                                />
+                            </div>
+
+                            <div class="desc">INVETA Group helps businesses to identify and assess new markets in
+                                Africa,
+                                providing insights into the region such as the regulatory environment. We promote the
+                                implementation of the African continental free trade area [AFCFTA]
+                            </div>
+
+                        </article>
+                        <div class="actions">
+                            <button class="btn">
+                                <span>contact</span>
+                                <img class="icon" src="https://rafaelavlucas.github.io/assets/icons/misc/heart.svg"/>
+                            </button>
+                            <button class="btn">
+                                <span>Know More</span>
+                                <img class="icon" src="https://rafaelavlucas.github.io/assets/icons/misc/trade.svg"/>
+                            </button>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </template>
+        <template id="our_journey" name="inveta journey">
+            <section>
+                <div class="accordion">
+                    <h2 class="custom-text">Our Journey</h2>
+                    <div class="accordion-content">
+                        <header>
+                            <span class="title">2017 - Foundation as Suexe Invest</span>
+                            <i class="fa-solid fa-plus"></i>
+                        </header>
+
+                        <p class="description">
+                            Our journey began in 2017, originally founded as Suexe Invest, marking the start of our
+                            commitment to Africa's economic development.
+                        </p>
+                    </div>
+
+                    <div class="accordion-content">
+                        <header>
+                            <span class="title">Restructuring to INVETA Group</span>
+                            <i class="fa-solid fa-plus"></i>
+                        </header>
+
+                        <p class="description">
+                            Through strategic restructuring, we evolved into INVETA Group, expanding our vision and
+                            mission to encompass broader sectors of the economy.
+
+
+                        </p>
+                    </div>
+                    <div class="accordion-content">
+                        <header>
+                            <span class="title">Expanding Across Africa</span>
+                            <i class="fa-solid fa-plus"></i>
+                        </header>
+
+                        <p class="description">
+                            With a strong network of strategic alliances and partnerships, we've broadened our impact,
+                            contributing significantly to various sectors across the continent.
+
+                        </p>
+                    </div>
+                    <div class="accordion-content">
+                        <header>
+                            <span class="title">Ongoing Growth</span>
+                            <i class="fa-solid fa-plus"></i>
+                        </header>
+
+                        <p class="description">
+                            Our commitment to driving economic growth and development continues as we push forward,
+                            creating sustainable value for Africa.
+                        </p>
                     </div>
                 </div>
 

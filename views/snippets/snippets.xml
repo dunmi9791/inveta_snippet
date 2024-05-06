@@ -18,7 +18,19 @@
                     <t t-snippet="inveta_snippet.inveta_mission" t-thumbnail="/inveta_snippet/static/src/img/snippets/mission.svg">
                         <keywords>ads, section</keywords>
                     </t>
+                    <t t-snippet="inveta_snippet.our_services" t-thumbnail="/inveta_snippet/static/src/img/snippets/services.svg">
+                        <keywords>ads, section</keywords>
+                    </t>
+                    <t t-snippet="inveta_snippet.inveta_mission_collabs" t-thumbnail="/inveta_snippet/static/src/img/snippets/mission_collabs.svg">
+                        <keywords>ads, section</keywords>
+                    </t>
                      <t t-snippet="inveta_snippet.s_our_history_content" t-thumbnail="/inveta_snippet/static/src/img/snippets/history.svg">
+                        <keywords>ads, section</keywords>
+                    </t>
+                    <t t-snippet="inveta_snippet.s_our_home_content" t-thumbnail="/inveta_snippet/static/src/img/snippets/home.svg">
+                        <keywords>ads, section</keywords>
+                    </t>
+                    <t t-snippet="inveta_snippet.our_journey" t-thumbnail="/inveta_snippet/static/src/img/snippets/journey.svg">
                         <keywords>ads, section</keywords>
                     </t>
 

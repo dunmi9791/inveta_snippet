@@ -1,4 +1,332 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <odoo>
+    <template id="inveta_homepage" inherit_id="website.homepage" name="Inveta Homepage">
+        <xpath expr="//t[@t-call='website.layout']" position="replace">
+            <t t-call="website.layout">
+                <t t-set="pageName" t-value="'Homepage'"/>
+                <div class="oe_structure"/>
+                <div id="wrap">
+                    <section class="main-section">
+                        <div class="mainHeading__content">
+                            <article class="mainHeading__text">
+                                <p class="mainHeading__preTitle">Inveta Group</p>
+                                <h2 class="mainHeading__title">Inter and Intra African Trade Facilitation</h2>
+                                <p class="mainHeading__description">
+                                    INVETA Group helps businesses to identify and assess new markets in Africa,
+                                    providing
+                                    insights
+                                    into the region such as the regulatory environment. We promote the implementation of
+                                    the
+                                    African
+                                    continental free trade area [AFCFTA]
+                                </p>
+                                <button class="cta">know more</button>
+                            </article>
+
+                            <figure class="mainHeading__image">
+                                <img
+                                        src="/inveta_snippet/static/src/img/bannnn-01.jpg"
+                                        alt=""
+                                />
+                            </figure>
+                        </div>
+                    </section>
+                    <section class="main-section">
+                        <div class="row-container">
+                            <div class="card-media">
+<!--                                <div class="content-wrap">-->
+                                    <div class="content-header">
+                                        <i class="fas fa-bars">
+                                        </i>
+                                        <h2>
+                                            Inveta News
+                                        </h2>
+                                        <i class="fas fa-ellipsis-v">
+                                        </i>
+                                    </div>
+                                    <ul class="timeline">
+                                        <li class="timeline-item">
+                                            <div class="timeline-item-content">
+                                                <time>
+                                                    You @10:42am
+                                                </time>
+                                                <p>
+                                                    Sure, I'll see you later.
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li class="timeline-item">
+                                            <div class="timeline-item-content">
+                                                <time>
+                                                    John Doe @10:37am
+                                                </time>
+                                                <p>
+                                                    Yeah, sure. Does 1:00pm work?
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li class="timeline-item">
+                                            <div class="timeline-item-content">
+                                                <time>
+                                                    You @9:47am
+                                                </time>
+                                                <p>
+                                                    Did you still want to grab lunch today?
+                                                </p>
+                                            </div>
+                                        </li>
+                                    </ul>
+<!--                                </div>-->
+                            </div>
+                                <div class="card-media">
+                                    <iframe src="https://www.youtube.com/embed/rGbwGmwqKOQ?si=cDYhkV5s_u44MtBA"></iframe>
+
+                                    <h3>
+                                        Invest and Trade Africa
+                                    </h3>
+
+                                    <button class="btn btn-outline-primary" type="button">
+                                        Watch Our Latest Episode
+                                    </button>
+
+                                </div>
+
+                        </div>
+                    </section>
+                    <section class="main-section">
+                        <div class="cards">
+                            <div class="card">
+                                <span class="close"></span>
+                                <span class="arrow"></span>
+                                <article>
+                                    <h2>Project Finance</h2>
+                                    <div class="title"></div>
+                                    <div class="pic">
+                                        <img src="/inveta_snippet/static/src/img/project_finance.jpg"/>
+                                    </div>
+
+                                    <div class="desc">INVETA Group is a leading provider of capital for development
+                                        projects in
+                                        Africa offering grand-scale, mid-size and intermediate financing, to both
+                                        government and
+                                        private sectors. We are partners with major global finance institutions that
+                                        supports
+                                        businesses and projects across Africa. Our terms and conditions are competitive
+                                        with low
+                                        interest rates and fast processing times making us effective in unlocking
+                                        Africa’s
+                                        transformative potential through inclusive financing. We are an experienced team
+                                        of
+                                        experts that provides advice to investors on investment opportunities, project
+                                        feasibility studies, funding strategies, and investor relations.
+                                    </div>
+
+                                </article>
+                                <div class="actions">
+                                    <button class="btn">
+                                        <span>contact</span>
+                                        <img class="icon"
+                                             src="https://rafaelavlucas.github.io/assets/icons/misc/heart.svg"/>
+                                    </button>
+                                    <button class="btn">
+                                        <span>Know More</span>
+                                        <img class="icon"
+                                             src="https://rafaelavlucas.github.io/assets/icons/misc/trade.svg"/>
+                                    </button>
+
+                                </div>
+                            </div>
+                            <div class="card">
+                                <span class="close"></span>
+                                <span class="arrow"></span>
+                                <article>
+                                    <h2>Investment Promotion Invest and Trade Africa</h2>
+                                    <div class="title"></div>
+                                    <div class="pic">
+                                        <img src="/inveta_snippet/static/src/img/inveta.png"/>
+                                        />
+                                    </div>
+
+                                    <div class="desc">The right communication is a fundamental aspect of economic
+                                        development
+                                        and an integral part of investment promotion. INVETA GROUP champions this course
+                                        through
+                                        the production of INVEST AND TRADE AFRICA, a premium weekly broadcast covering
+                                        macro
+                                        economic policies and projects impacting the African region while profiling the
+                                        continent’s opportunities in energy, finance, mining and inter and intra Africa
+                                        Trade.
+                                        Through Invest and Trade Africa, we are making Africa's voice heard and her name
+                                        known
+                                        on an equitable global level by promoting and projecting projects, governments,
+                                        and
+                                        organizations making impactful strides on the continent.
+                                    </div>
+
+                                </article>
+                                <div class="actions">
+                                    <button class="btn">
+                                        <span>contact</span>
+                                        <img class="icon"
+                                             src="https://rafaelavlucas.github.io/assets/icons/misc/heart.svg"/>
+                                    </button>
+                                    <button class="btn">
+                                        <span>Know More</span>
+                                        <img class="icon"
+                                             src="https://rafaelavlucas.github.io/assets/icons/misc/trade.svg"/>
+                                    </button>
+
+                                </div>
+                            </div>
+                            <div class="card">
+                                <span class="close"></span>
+                                <span class="arrow"></span>
+                                <article>
+                                    <h2>Inter and Intra-African Trade Facilitation</h2>
+                                    <div class="title"></div>
+                                    <div class="pic">
+                                        <img src="/inveta_snippet/static/src/img/inter.jpg"/>
+                                        />
+                                    </div>
+
+                                    <div class="desc">INVETA Group helps businesses to identify and assess new markets
+                                        in
+                                        Africa,
+                                        providing insights into the region such as the regulatory environment. We
+                                        promote the
+                                        implementation of the African continental free trade area [AFCFTA]
+                                    </div>
+
+                                </article>
+                                <div class="actions">
+                                    <button class="btn">
+                                        <span>contact</span>
+                                        <img class="icon"
+                                             src="https://rafaelavlucas.github.io/assets/icons/misc/heart.svg"/>
+                                    </button>
+                                    <button class="btn">
+                                        <span>Know More</span>
+                                        <img class="icon"
+                                             src="https://rafaelavlucas.github.io/assets/icons/misc/trade.svg"/>
+                                    </button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="main-section">
+                        <div class="card-container">
+                            <div class="flip-card">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front">
+                                        <p class="title">Our Mission</p>
+                                        <p></p>
+                                    </div>
+                                    <div class="flip-card-back">
+                                        <p class="title"></p>
+                                        <p>At INVETA Group, our mission is to empower Africa’s economic growth and
+                                            sustainable
+                                            development through our specialized services. We promote a healthy and an
+                                            enabling
+                                            environment for investment, trade, and the implementation of impactful
+                                            projects
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flip-card">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front">
+                                        <p class="title">Collaborations and Partnerships</p>
+                                        <p></p>
+                                    </div>
+                                    <div class="flip-card-back">
+                                        <p class="title"></p>
+                                        <p>At INVETA Group, we recognize the power of collaborations and stakeholder
+                                            engagement
+                                            in
+                                            driving transformative change. By partnering and collaborating with both the
+                                            Government
+                                            and private sector, we build strong networks, foster trust, and leverage
+                                            collective
+                                            expertise to achieve our shared goals. Through these strategic
+                                            collaborations, we
+                                            strive
+                                            to make a lasting impact on economic development, energy access, and
+                                            sustainable
+                                            growth
+                                            in Africa
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--                </div>-->
+                    </section>
+                    <section class="main-section">
+                        <div class="accordion">
+                            <h2 class="custom-text">Our Journey</h2>
+                            <div class="accordion-content">
+                                <header>
+                                    <span class="title">2017 - Foundation as Suexe Invest</span>
+                                    <i class="fa-solid fa-plus"></i>
+                                </header>
+
+                                <p class="description">
+                                    Our journey began in 2017, originally founded as Suexe Invest, marking the start of
+                                    our
+                                    commitment to Africa's economic development.
+                                </p>
+                            </div>
+
+                            <div class="accordion-content">
+                                <header>
+                                    <span class="title">Restructuring to INVETA Group</span>
+                                    <i class="fa-solid fa-plus"></i>
+                                </header>
+
+                                <p class="description">
+                                    Through strategic restructuring, we evolved into INVETA Group, expanding our vision
+                                    and
+                                    mission to encompass broader sectors of the economy.
+
+
+                                </p>
+                            </div>
+                            <div class="accordion-content">
+                                <header>
+                                    <span class="title">Expanding Across Africa</span>
+                                    <i class="fa-solid fa-plus"></i>
+                                </header>
+
+                                <p class="description">
+                                    With a strong network of strategic alliances and partnerships, we've broadened our
+                                    impact,
+                                    contributing significantly to various sectors across the continent.
+
+                                </p>
+                            </div>
+                            <div class="accordion-content">
+                                <header>
+                                    <span class="title">Ongoing Growth</span>
+                                    <i class="fa-solid fa-plus"></i>
+                                </header>
+
+                                <p class="description">
+                                    Our commitment to driving economic growth and development continues as we push
+                                    forward,
+                                    creating sustainable value for Africa.
+                                </p>
+                            </div>
+                        </div>
+
+                    </section>
+
+                </div>
+
+            </t>
+        </xpath>
+    </template>
+
 
 </odoo>

@@ -590,10 +590,21 @@ body{margin-top:20px;}
     margin-bottom: 30px;
     text-align: center;
     height: 500px;  /* Default height for larger screens */
+    width: 500px;
+   background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+   border-radius: 8px;
+   color: white;
+   overflow: hidden;
+   position: relative;
+   transform-style: preserve-3d;
+   perspective: 1000px;
+   transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+   cursor: pointer;
 
     /* Media query for screens with a maximum width of 767 pixels (typical mobile screens) */
     @media (max-width: 767px) {
       height: auto;
+
     }
 
     img {
@@ -868,3 +879,1340 @@ body {
             border-radius: 5px;
             margin-bottom: 15px;
         }
+
+.about {
+   $cubic: cubic-bezier(0.64, 0.01, 0.07, 1.65);
+   $transition: 0.6s $cubic;
+   $size: 40px;
+   position: fixed;
+   z-index: 10;
+   bottom: 10px;
+   right: 10px;
+   width: $size;
+   height: $size;
+   display: flex;
+   justify-content: flex-end;
+   align-items: flex-end;
+   transition: all 0.2s ease;
+
+   .bg_links {
+      width: $size;
+      height: $size;
+      border-radius: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(#000000, 0.2);
+      border-radius: 100%;
+      backdrop-filter: blur(5px);
+      position: absolute;
+   }
+
+   .logo {
+      width: $size;
+      height: $size;
+      z-index: 9;
+      background-image: url(https://rafaelavlucas.github.io/assets/codepen/logo_white.svg);
+      background-size: 50%;
+      background-repeat: no-repeat;
+      background-position: 10px 7px;
+      opacity: 0.9;
+      transition: all 1s 0.2s ease;
+      bottom: 0;
+      right: 0;
+   }
+
+   .social {
+      opacity: 0;
+      right: 0;
+      bottom: 0;
+
+      .icon {
+         width: 100%;
+         height: 100%;
+         background-size: 20px;
+         background-repeat: no-repeat;
+         background-position: center;
+         background-color: transparent;
+         display: flex;
+         transition: all 0.2s ease, background-color 0.4s ease;
+         opacity: 0;
+         border-radius: 100%;
+      }
+
+      &.portfolio {
+         transition: all 0.8s ease;
+
+         .icon {
+            background-image: url(https://rafaelavlucas.github.io/assets/codepen/link.svg);
+         }
+      }
+
+      &.dribbble {
+         transition: all 0.3s ease;
+         .icon {
+            background-image: url(https://rafaelavlucas.github.io/assets/codepen/dribbble.svg);
+         }
+      }
+
+      &.linkedin {
+         transition: all 0.8s ease;
+         .icon {
+            background-image: url(https://rafaelavlucas.github.io/assets/codepen/linkedin.svg);
+         }
+      }
+   }
+
+   &:hover {
+      width: 105px;
+      height: 105px;
+      transition: all $transition;
+
+      .logo {
+         opacity: 1;
+         transition: all 0.6s ease;
+      }
+
+      .social {
+         opacity: 1;
+
+         .icon {
+            opacity: 0.9;
+         }
+
+         &:hover {
+            background-size: 28px;
+            .icon {
+               background-size: 65%;
+               opacity: 1;
+            }
+         }
+
+         &.portfolio {
+            right: 0;
+            bottom: calc(100% - 40px);
+            transition: all 0.3s 0s $cubic;
+            .icon {
+               &:hover {
+                  background-color: #698fb7;
+               }
+            }
+         }
+
+         &.dribbble {
+            bottom: 45%;
+            right: 45%;
+            transition: all 0.3s 0.15s $cubic;
+            .icon {
+               &:hover {
+                  background-color: #ea4c89;
+               }
+            }
+         }
+
+         &.linkedin {
+            bottom: 0;
+            right: calc(100% - 40px);
+            transition: all 0.3s 0.25s $cubic;
+            .icon {
+               &:hover {
+                  background-color: #fe7b01;
+               }
+            }
+         }
+      }
+   }
+}
+
+
+@import url("https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900&display=swap");
+
+$font-01: "Raleway", sans-serif;
+
+$gradient-02: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+$gradient-01: linear-gradient(to top, #d64a1a 0%, #f1f1f1 100%);
+$gradient-03: linear-gradient(to top, #d64a1a 0%, #ffa654 100%);
+$m-01: #d64c25;
+$m-02: #ffffff;
+
+@mixin sm {
+   @media screen and (max-width: 799px) {
+      @content;
+   }
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   list-style: none;
+   border: 0;
+   outline: 0;
+   -webkit-tap-highlight-color: transparent;
+   text-decoration: none;
+   color: inherit;
+   box-sizing: border-box;
+
+   &:focus {
+      outline: 0;
+   }
+}
+
+body {
+   font-family: $font-01;
+}
+
+.mainNav {
+   width: 100%;
+   height: 80px;
+   position: absolute;
+   z-index: 1;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   color: $m-01;
+   text-transform: uppercase;
+   padding: 0 40px;
+   @include sm {
+      padding: 0 20px;
+   }
+
+   &__logo {
+        width: 350px; /* Adjust width as needed */
+        height: auto; /* This maintains aspect ratio */
+        margin: 0; /* Remove default margin */
+        padding: 0; /* Remove default padding */
+   }
+
+   &__links {
+      display: flex;
+      @include sm {
+         display: none;
+      }
+   }
+
+   &__link {
+      letter-spacing: 1px;
+      font-size: 14px;
+      margin-left: 20px;
+      font-weight: 600;
+      box-shadow: inset 0px -10px 0px rgba(white, 0.5);
+      transition: all 0.4s ease, transform 0.2s ease;
+      padding: 2px 4px;
+      transform: translateY(0px);
+
+      &:hover {
+        transform: translateY(-5px);
+        box-shadow: inset 0px -20px 0px white;
+      }
+   }
+
+   &__icon {
+      background-image: url(https://rafaelalucas91.github.io/assets/icons/black/icon-141.svg);
+      width: 32px;
+      height: 32px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      display: none;
+
+      @include sm {
+         display: block;
+      }
+   }
+}
+
+.mainHeading {
+   width: 100%;
+   height: 100%;
+   position: relative;
+   padding: 0 0px;
+   background-image: $gradient-01;
+
+
+   @include sm {
+      padding: 0 0px;
+   }
+
+   &__content {
+      max-width: 100%;
+      min-height: 600px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+
+      @include sm {
+         min-height: 500px;
+      }
+   }
+
+   &__text {
+      z-index: 1;
+      color: $m-02;
+      background-color: rgba(white, 0);
+      padding: 40px;
+      max-width: 620px;
+      margin-top: 100px;
+      width: 70%;
+      backdrop-filter: none;
+      animation: text 0.8s 0.6s ease backwards;
+      position: relative;
+      opacity: 0;
+
+      &:before {
+         content: "";
+         position: absolute;
+         width: 5px;
+         height: 100%;
+         background-color: rgba(white, 0.5);
+         top:0;
+         left:0;
+         animation: line 0.8s 0.6s ease backwards;
+         @keyframes line {
+         0% {
+            right:0;
+            width:100%;
+            opacity:0;
+         }
+      }
+      }
+
+      @include sm {
+         padding: 20px;
+         margin: 9px 0 40px 0;
+      }
+
+      @keyframes text {
+         0% {
+            opacity: 0;
+            transform: translateX(200px);
+         }
+      }
+   }
+
+   &__preTitle {
+      text-transform: uppercase;
+      font-weight: 600;
+      letter-spacing: 2px;
+      margin-bottom: 16px;
+      color: $m-02;
+   }
+
+   &__title {
+      text-transform: uppercase;
+      font-weight: 200;
+      letter-spacing: 2px;
+      margin-bottom: 24px;
+      font-size: 40px;
+      color: $m-02;
+
+      @include sm {
+         margin-bottom: 16px;
+         font-size: 28px;
+      }
+   }
+
+   &__description {
+      letter-spacing: 0.5px;
+      font-size: 16px;
+      line-height: 26px;
+      @include sm {
+         font-size: 14px;
+      }
+   }
+
+   &__image {
+      right: 0;
+      max-width: 1200px;
+      width: 100%;
+      height: 100%;
+      transform: translatey(30px);
+      position: absolute;
+      overflow: hidden;
+      animation: image 0.6s 0.2s ease backwards;
+
+      @include sm {
+         height: 480px;
+         width: 70%;
+         transform: translatey(80px);
+         right: -6%;
+      }
+
+      @keyframes image {
+         0% {
+            opacity: 0;
+            transform: translatey(200px);
+         }
+      }
+
+      &:before,
+      &:after {
+         content: "";
+         position: absolute;
+         width: 100%;
+         height: 0%;
+         top: 100%;
+         background-image: $gradient-01;
+         opacity: 1;
+         left: 0;
+      }
+
+      &:before {
+         animation: imageBefore 1s 0.2s ease backwards;
+
+         @keyframes imageBefore {
+            0% {
+               height: 100%;
+               top: 0;
+            }
+         }
+      }
+
+      &:after {
+         background-image: $gradient-01;
+         height: 100%;
+         top: 0;
+         opacity: 0.2;
+      }
+      img {
+         width: 100%;
+         height: 100%;
+      }
+   }
+}
+
+.cta {
+   padding: 16px 32px;
+   color: $m-02;
+   background-color: transparent;
+   border: 1px solid rgba($m-02, 0.4);
+   font-family: $font-01;
+   text-transform: uppercase;
+   letter-spacing: 2px;
+   font-weight: 600;
+   margin-top: 32px;
+   cursor: pointer;
+   box-shadow: inset 0px 0px 0px rgba($m-02, 0.2);
+   transition: all 0.4s ease;
+
+   &:hover {
+      border: 1px solid rgba($m-02, 0.1);
+      box-shadow: inset 0px -80px 0px rgba($m-02, 0.1);
+      transform: translateY(-5px);
+   }
+   @include sm {
+      margin-top: 16px;
+   }
+}
+
+@keyframes textAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.mainHeading__text {
+    animation: textAnimation 1s ease forwards;
+}
+
+.mainHeading__title, .mainHeading__description {
+    opacity: 0;
+    animation: textAnimation 1s ease forwards;
+    animation-delay: 1s; /* Delay the animation */
+}
+
+.gradient-background {
+    background: hsla(15, 69%, 59%, 1);
+    background: radial-gradient(circle, hsla(15, 69%, 59%, 1) 0%, hsla(0, 0%, 95%, 1) 100%);
+    background: -moz-radial-gradient(circle, hsla(15, 69%, 59%, 1) 0%, hsla(0, 0%, 95%, 1) 100%);
+    background: -webkit-radial-gradient(circle, hsla(15, 69%, 59%, 1) 0%, hsla(0, 0%, 95%, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#DF734E", endColorstr="#F1F1F1", GradientType=1);
+    height: 150px;
+}
+
+.mainHeadings {
+   width: 100%;
+   height: 100%;
+   position: relative;
+   padding: 0 40px;
+   background-image: $gradient-01;
+
+
+   @include sm {
+      padding: 0 20px;
+   }
+
+   &__content {
+      max-width: 1110px;
+      min-height: 600px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+
+      @include sm {
+         min-height: 500px;
+      }
+   }
+
+   &__text {
+      z-index: 1;
+      color: $m-02;
+      background-color: rgba(white, 0.2);
+      padding: 40px;
+      max-width: 620px;
+      margin-top: 100px;
+      width: 70%;
+      backdrop-filter: blur(8px);
+      animation: text 0.8s 0.6s ease backwards;
+      position: relative;
+
+      &:before {
+         content: "";
+         position: absolute;
+         width: 5px;
+         height: 100%;
+         background-color: rgba(white, 0.5);
+         top:0;
+         left:0;
+         animation: line 0.8s 0.6s ease backwards;
+         @keyframes line {
+         0% {
+            right:0;
+            width:100%;
+            opacity:0;
+         }
+      }
+      }
+
+      @include sm {
+         padding: 20px;
+         margin: 90px 0 40px 0;
+      }
+
+      @keyframes text {
+         0% {
+            opacity: 0;
+            transform: translateX(200px);
+         }
+      }
+   }
+
+   &__preTitle {
+      text-transform: uppercase;
+      font-weight: 600;
+      letter-spacing: 2px;
+      margin-bottom: 16px;
+      color: $m-02;
+   }
+
+   &__title {
+      text-transform: uppercase;
+      font-weight: 200;
+      letter-spacing: 2px;
+      margin-bottom: 24px;
+      font-size: 40px;
+      color: $m-02;
+
+      @include sm {
+         margin-bottom: 16px;
+         font-size: 28px;
+      }
+   }
+
+   &__description {
+      letter-spacing: 0.5px;
+      font-size: 16px;
+      line-height: 26px;
+      @include sm {
+         font-size: 14px;
+      }
+   }
+
+   &__image {
+      right: 0;
+      max-width: 600px;
+      width: 60%;
+      height: 600px;
+      transform: translatey(100px);
+      position: absolute;
+      overflow: hidden;
+      animation: image 0.6s 0.2s ease backwards;
+
+      @include sm {
+         height: 480px;
+         width: 70%;
+         transform: translatey(80px);
+         right: -6%;
+      }
+
+      @keyframes image {
+         0% {
+            opacity: 0;
+            transform: translatey(200px);
+         }
+      }
+
+      &:before,
+      &:after {
+         content: "";
+         position: absolute;
+         width: 100%;
+         height: 0%;
+         top: 100%;
+         background-image: $gradient-01;
+         opacity: 1;
+         left: 0;
+      }
+
+      &:before {
+         animation: imageBefore 1s 0.2s ease backwards;
+
+         @keyframes imageBefore {
+            0% {
+               height: 100%;
+               top: 0;
+            }
+         }
+      }
+
+      &:after {
+         background-image: $gradient-03;
+         height: 100%;
+         top: 0;
+         opacity: 0.2;
+      }
+      img {
+         width: 100%;
+         height: 100%;
+      }
+   }
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 590px;
+  height: 354px;
+  perspective: 1000px;
+  font-family: sans-serif;
+}
+
+.title {
+  font-size: 1.5em;
+  font-weight: 900;
+  text-align: center;
+  margin: 0;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  box-shadow: 0 8px 14px 0 rgba(0,0,0,0.2);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border: 1px solid coral;
+  border-radius: 1rem;
+}
+
+.flip-card-front {
+  background: linear-gradient(120deg, bisque 60%, rgb(254, 125, 5) 88%,
+     rgb(255, 211, 195) 40%, rgba(255, 127, 80, 0.603) 48%);
+  color: coral;
+}
+
+.flip-card-back {
+  background: linear-gradient(120deg, rgb(214, 74, 26) 30%, coral 88%,
+     bisque 40%, rgb(255, 185, 160) 78%);
+  color: white;
+  transform: rotateY(180deg);
+}
+.card-container {
+  display: flex;
+  justify-content: center; /* Center elements horizontally */
+  margin: 0 auto;  /* Add margin for spacing from edges */
+  width: 100%;  /* Adjust width as needed (e.g., 70% for more space) */
+}
+.about {
+   $cubic: cubic-bezier(0.64, 0.01, 0.07, 1.65);
+   $transition: 0.6s $cubic;
+   $size: 40px;
+   position: fixed;
+   z-index: 10;
+   bottom: 10px;
+   right: 10px;
+   width: $size;
+   height: $size;
+   display: flex;
+   justify-content: flex-end;
+   align-items: flex-end;
+   transition: all 0.2s ease;
+
+   .bg_links {
+      width: $size;
+      height: $size;
+      border-radius: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(#000000, 0.2);
+      border-radius: 100%;
+      backdrop-filter: blur(5px);
+      position: absolute;
+   }
+
+   .logo {
+      width: $size;
+      height: $size;
+      z-index: 9;
+      background-image: url(https://rafaelavlucas.github.io/assets/codepen/logo_white.svg);
+      background-size: 50%;
+      background-repeat: no-repeat;
+      background-position: 10px 7px;
+      opacity: 0.9;
+      transition: all 1s 0.2s ease;
+      bottom: 0;
+      right: 0;
+   }
+
+   .social {
+      opacity: 0;
+      right: 0;
+      bottom: 0;
+
+      .icon {
+         width: 100%;
+         height: 100%;
+         background-size: 20px;
+         background-repeat: no-repeat;
+         background-position: center;
+         background-color: transparent;
+         display: flex;
+         transition: all 0.2s ease, background-color 0.4s ease;
+         opacity: 0;
+         border-radius: 100%;
+      }
+
+      &.portfolio {
+         transition: all 0.8s ease;
+
+         .icon {
+            background-image: url(https://rafaelavlucas.github.io/assets/codepen/link.svg);
+         }
+      }
+
+      &.dribbble {
+         transition: all 0.3s ease;
+         .icon {
+            background-image: url(https://rafaelavlucas.github.io/assets/codepen/dribbble.svg);
+         }
+      }
+
+      &.linkedin {
+         transition: all 0.8s ease;
+         .icon {
+            background-image: url(https://rafaelavlucas.github.io/assets/codepen/linkedin.svg);
+         }
+      }
+   }
+
+   &:hover {
+      width: 105px;
+      height: 105px;
+      transition: all $transition;
+
+      .logo {
+         opacity: 1;
+         transition: all 0.6s ease;
+      }
+
+      .social {
+         opacity: 1;
+
+         .icon {
+            opacity: 0.9;
+         }
+
+         &:hover {
+            background-size: 28px;
+            .icon {
+               background-size: 65%;
+               opacity: 1;
+            }
+         }
+
+         &.portfolio {
+            right: 0;
+            bottom: calc(100% - 40px);
+            transition: all 0.3s 0s $cubic;
+            .icon {
+               &:hover {
+                  background-color: #698fb7;
+               }
+            }
+         }
+
+         &.dribbble {
+            bottom: 45%;
+            right: 45%;
+            transition: all 0.3s 0.15s $cubic;
+            .icon {
+               &:hover {
+                  background-color: #ea4c89;
+               }
+            }
+         }
+
+         &.linkedin {
+            bottom: 0;
+            right: calc(100% - 40px);
+            transition: all 0.3s 0.25s $cubic;
+            .icon {
+               &:hover {
+                  background-color: #0077b5;
+               }
+            }
+         }
+      }
+   }
+}
+
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,700");
+@import url("https://fonts.googleapis.com/css?family=Barlow:300,400,500,600,700&display=swap");
+
+$font: "Barlow", sans-serif;
+
+body {
+  font-family: $font;
+  margin: 0;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background-color: #f2f2f2;
+}
+
+.cards {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .card {
+    height: 440px;
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0px 20px 30px -10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    min-width: 260px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    transition: all 0.4s ease;
+    margin: 5px 5px;
+
+    &:before {
+      height: 190px;
+      width: calc(100% + 100px);
+      content: "";
+      position: absolute;
+      background-image: linear-gradient(to top, #d64a1a 0%, #fe7b01 100%);
+      border-radius: 4px 4px 100% 100%;
+      transition: all 0.4s ease-out;
+      top: 0;
+    }
+
+    .close {
+      width: 18px;
+      height: 18px;
+      position: absolute;
+      z-index: 2;
+      cursor: pointer;
+      background-image: url("https://rafaelalvucas.github.io/assets/icons/misc/cross.svg");
+      background-size: 80%;
+      background-repeat: no-repeat;
+      background-position: center;
+      top: 0;
+      right: 0;
+      margin: 10px;
+      padding: 5px;
+      transition: all 0.2s ease;
+
+      &:hover {
+        background-size: 100%;
+        opacity: 0.8;
+      }
+    }
+
+    .arrow {
+      display: none;
+    }
+
+    article {
+      z-index: 1;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+
+      h2 {
+        color: white;
+        margin: 0;
+        padding: 40px 20px 10px 20px;
+        font-weight: 500;
+        font-size: 24px;
+        letter-spacing: 0.5px;
+      }
+
+      .title {
+        color: white;
+        padding: 10px 20px;
+        letter-spacing: 0.8px;
+        transition: all 0.4s ease;
+      }
+
+      .desc {
+        padding: 10px 30px;
+        font-size: 14px;
+        text-align: center;
+        line-height: 24px;
+        color: #666;
+        height: 90px;
+        transition: all 0.4s ease-out;
+      }
+
+      .pic {
+        width: 120px;
+        height: 120px;
+        overflow: hidden;
+        border-radius: 100%;
+        margin: 20px 0;
+        box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.3);
+        transition: all 0.6s ease;
+
+        img {
+          width: 100%;
+          -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+        }
+      }
+    }
+    .actions {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      background: white;
+      //bottom: 4px;
+      z-index: 1;
+
+      .btn {
+        border: 0;
+        background-color: transparent;
+        box-sizing: border-box;
+        width: calc(50% - 1px);
+        height: 36px;
+        margin: 0;
+        text-transform: uppercase;
+        font-size: 10px;
+        transition: all 0.6s ease-in-out;
+        cursor: pointer;
+        color: #fe7d05;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 500;
+        font-family: $font;
+        letter-spacing: 0.5px;
+        background: rgba(68, 129, 235, 0.08);
+
+        span {
+          z-index: 1;
+          opacity: 1;
+          transition: all 0.4s ease-in-out;
+        }
+
+        .icon {
+          width: 10px;
+          opacity: 0;
+          position: absolute;
+          transition: all 0.2s ease-in-out;
+        }
+
+        &:before {
+          content: "";
+          width: 100%;
+          height: 0%;
+          position: absolute;
+          background: #4481eb;
+          transition: all 0.4s ease;
+          bottom: 0;
+          opacity: 0.2;
+        }
+
+        &:focus {
+          outline: 0;
+        }
+
+        &:hover {
+          background-color: rgba(255, 255, 255, 0.5);
+
+          span {
+            opacity: 0;
+            transition: all 0.3s ease-in-out;
+          }
+
+          .icon {
+            width: 22px;
+            opacity: 1;
+            transition: all 0.4s ease-in-out;
+          }
+
+          &:nth-child(3) {
+            .icon {
+              width: 18px;
+            }
+          }
+          &:before {
+            height: 100%;
+          }
+        }
+
+        &.clicked {
+
+          span {
+            display: none;
+          }
+          .icon {
+            width: 22px;
+            opacity: 1;
+            animation: icon 0.5s ease forwards;
+
+            @keyframes icon {
+              0%{
+                width: 22px;
+              }
+              50%{
+                width: 40px;
+              }
+              100%{
+                width: 22px;
+              }
+            }
+          }
+          &:before {
+            opacity: 0.3;
+            height: 100%;
+          }
+        }
+      }
+    }
+
+    &:hover {
+      transform: translateY(-10px);
+      box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.3);
+
+      &:before {
+        height: 100%;
+        border-radius: 4px;
+      }
+
+      .desc {
+        color: white;
+      }
+
+      .pic {
+        box-shadow: 0px 0px 0px 8px rgba(255, 255, 255, 0.3);
+        img {
+          -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
+        }
+      }
+    }
+
+    &.closed {
+      min-width: 120px;
+      max-width: 120px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: all 0.6s ease;
+      cursor: pointer;
+
+      .title,
+      .desc,
+      .actions,
+      .close {
+        display: none;
+      }
+
+      h2 {
+        padding: 0;
+        height: 100%;
+        transform: rotate(-90deg);
+        width: 440px;
+        z-index: 2;
+        transition: all 0.6s ease;
+      }
+
+      .pic {
+        border-radius: 100%;
+        height: 400px;
+        width: 400px;
+        position: absolute;
+        top: -20px;
+        margin: 0;
+        box-shadow: 0;
+        transition: all 0.6s ease;
+
+        img {
+          object-fit: cover;
+          height: 100%;
+          transform: translateY(20px);
+        }
+
+        &:before {
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          background-color: black;
+          opacity: 0.5;
+          z-index: 1;
+          transition: all 0.4s ease;
+          transform: translateY(20px);
+        }
+      }
+
+      &:before {
+        height: 100%;
+        border-radius: 4px;
+      }
+
+      .arrow {
+        width: 18px;
+        height: 18px;
+        position: absolute;
+        z-index: 2;
+        cursor: pointer;
+        bottom: 15px;
+        padding: 5px;
+        display: flex;
+        justify-content: center;
+        background-image: url("https://rafaelavlucas.github.io/assets/icons/misc/expand.svg");
+        background-size: 80%;
+        background-repeat: no-repeat;
+        background-position: center;
+        transition: all 0.2s ease;
+      }
+
+      &:hover {
+        .arrow {
+          background-size: 100%;
+          opacity: 0.6;
+        }
+      }
+    }
+  }
+}
+.content-wrap, .card-media {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        .content-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 15px;
+            margin-bottom: 15px;
+        }
+        .content-header h2 {
+            margin: 0;
+        }
+        .content-header i {
+            font-size: 1.5em;
+        }
+        .timeline {
+            position: relative;
+            padding: 20px 0;
+            list-style: none;
+        }
+        .timeline:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 40px;
+            width: 2px;
+            margin-left: -1.5px;
+            background-color: #e9ecef;
+        }
+        .timeline-item {
+            margin-bottom: 20px;
+            position: relative;
+        }
+        .timeline-item:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 34px;
+            width: 13px;
+            height: 13px;
+            border-radius: 50%;
+            background-color: #fff;
+            border: 3px solid #6c757d;
+        }
+        .timeline-item:after {
+            content: '';
+            position: absolute;
+            top: 8px;
+            left: 40px;
+            width: 0;
+            height: 0;
+            border-top: 4px solid transparent;
+            border-bottom: 4px solid transparent;
+            border-left: 4px solid #6c757d;
+        }
+        .timeline-item-content {
+            margin-left: 60px;
+            padding: 0 20px;
+        }
+        .timeline-item-content time {
+            display: block;
+            margin-bottom: 6px;
+            color: #495057;
+        }
+        .card-media img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+        .card-media h3 {
+            margin-top: 0;
+        }
+        .card-media .btn {
+            margin-right: 5px;
+        }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #e9e9e9;
+}
+.accordion {
+	max-width: 1200px;
+	width: 100%;
+	background: #FFF;
+	margin: 0 15px;
+	padding: 30px;
+	border-radius: 8px;
+	box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+.accordion .accordion-content {
+	margin: 10px 0;
+	border-radius: 4px;
+	overflow: hidden;
+}
+.accordion-content.open{
+    padding-bottom: 10px;
+}
+.accordion-content header{
+    display: flex;
+    min-height: 50px;
+    padding: 0 15px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.2s linear;
+    background: #d94b23;
+}
+.accordion-content.open header{
+    min-height: 35px;
+}
+.accordion-content header .title {
+	font-size: 16px;
+	font-weight: 700;
+	color: #fff;
+}
+.accordion-content header i{
+    font-size: 15px;
+    color: #fff;
+}
+.accordion-content .description {
+	height: 0;
+	font-size: 14px;
+	color: #262626;
+	font-weight: 400;
+	padding: 0px 15px;
+	transition: all 0.2s linear;
+	background: #fff;
+	margin-top: 10px;
+}
+.custom-text {
+    color: #d94b23; /* Set the text color */
+    text-align: center; /* Center-align the text */
+    font-weight: bold; /* Make the text bold */
+}
+.row-container {
+    width: 1200px; /* Set the width of the row */
+    display: flex; /* Use flexbox */
+//     justify-content: space-betwn; /* Space items equally */
+    align-items: stretch;
+}
+
+.row-container > div {
+    width: calc(50% - 10px); /* Calculate the width of each div (50% minus margin) */
+    margin-right: 20px; /* Add margin between the divs */
+    flex: 1;
+    margin: 0 10px;
+}
+.card-media {
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Optional: Set flex direction to column */
+    align-items: center; /* Center items horizontally */
+    text-align: center; /* Optional: Center text horizontally */
+    height: 400px;
+}
+
+
+.card-media button {
+    margin-top: 10px; /* Optional: Add margin for spacing */
+}

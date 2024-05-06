@@ -56,3 +56,5 @@ odoo.define('inveta_snippet.youtube_video_carousel', function (require) {
 
     return YouTubeVideoCarousel;
 });
+var scene = document.getElementById('scene');
+var parallaxInstance = new Parallax(scene);

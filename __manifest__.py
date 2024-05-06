@@ -26,8 +26,11 @@
         'security/ir.model.access.csv',
         'views/views.xml',
         'views/templates.xml',
+        'views/header.xml',
         'views/footer.xml',
+        'views/homepage.xml',
         'views/about_us.xml',
+        'views/services.xml',
         'views/tv.xml',
         'views/snippets/ads_section.xml',
         'views/snippets/dynamic_ads_section.xml',
@@ -39,8 +42,10 @@
         'web.assets_frontend': [
             'inveta_snippet/static/src/scss/styles.scss',
             'inveta_snippet/static/src/js/ads.js',
+            'inveta_snippet/static/src/js/changing_text.js',
             'inveta_snippet/static/src/js/youtube_video_carousel.js',
             'inveta_snippet/static/src/css/youtube_video_carousel.css',
+            'inveta_snippet/static/src/css/all.min.css',
 
         ],
         # 'web._assets_primary_variables': [
